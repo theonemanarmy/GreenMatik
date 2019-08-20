@@ -61,6 +61,14 @@
                     <span class="header-oculto">E-MAIL</span>
                 </a>
             </li>
+            <?php if(isset($_SESSION['identity'])): ?>
+            <li class="nav-item">
+                <a class="nav-link header-oculto" href="<?=base_url?>usuario/logout">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span class="header-oculto">CERRAR SESIÓN</span>
+                </a>
+            </li>
+            <?php endif; ?>
         </ul>
     </nav>
 
@@ -76,7 +84,7 @@
             <li class="nav-item">
                 <a class="nav-link " href="ventas@greenmatik.com" style="color:white"><i class="fas fa-envelope" style="color:white"></i> <span class="barra-movil">E-mail</span></a>
             </li>
-
+            
 
         </ul>
     </nav>
