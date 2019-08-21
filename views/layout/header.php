@@ -109,7 +109,7 @@
                     <a class="nav-link barra" href="<?= base_url ?>index/services">SERVICIOS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link barra" href="<?= base_url ?>index/catalogue">CATÁLOGO</a>
+                    <a class="nav-link barra" href="<?= base_url ?>producto/catalogue">CATÁLOGO</a>
                 </li>
 
                 <li class="nav-item">

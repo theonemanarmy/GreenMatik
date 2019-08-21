@@ -9,10 +9,6 @@ class indexController{
         require_once 'views/layout/servicios.php';
     }
 
-    public function catalogue(){
-        require_once 'views/layout/catalogo.php';
-    }
-
     public function spareParts(){
         require_once 'views/layout/refacciones.php';
     }
