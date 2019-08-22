@@ -143,10 +143,12 @@ class Producto{
 
     public function getOne(){
         $sql = "SELECT p.*, c.nombre AS 'categoria', s.nombre AS 'serie', s.descripcion AS 'serieDescripcion', ".
-                "s.ventajas AS 'serieVentajas' ".
+                "s.ventajas AS 'serieVentajas', s.incluye1, s.incluye2, s.incluye3, ".
+                "s.incluye4, s.incluye5, s.incluye6, s.incluye7, s.incluye8, cr.* ".
                 "FROM PRODUCTOS p ".
                 "INNER JOIN CATEGORIAS c ON c.id = p.categoria_id ".
                 "INNER JOIN SERIES s ON s.id = p.serie_id ".
+                "INNER JOIN CARACTERISTICAS cr ON cr.id = p.caracteristicas_id ".
                 "WHERE p.id = {$this->getId()} ".
                 "ORDER BY RAND();";
         $producto=$this->db->query($sql);

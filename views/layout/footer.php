@@ -58,20 +58,21 @@
 </footer>
 
 
-
-
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
 </script>
+
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
 </script>
-<script src="<?= base_url ?>/assets/js/owl.carousel.min.js"> </script>
+<script src="<?= base_url ?>assets/js/owl.carousel.min.js"> </script>
 <script type="text/javascript" src="<?= base_url ?>/assets/js/jquery.magnific-popup.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="<?= base_url ?>/assets/js/custom.js"></script>
-<script src="<?= base_url ?>/assets/js/jquery.backstretch.min.js"></script>
-<script src="<?= base_url ?>/assets/js/jquery.simple-text-rotator.min.js"></script>
+
+
+<script src="<?= base_url ?>assets/js/custom.js"></script>
+<script src="<?= base_url ?>assets/js/jquery.backstretch.min.js"></script>
+<script src="<?= base_url ?>assets/js/jquery.simple-text-rotator.min.js"></script>
 
 <script>
 
@@ -187,6 +188,7 @@
         speed: 3850
     });
 </script>
+
 </body>
 
 </html>
