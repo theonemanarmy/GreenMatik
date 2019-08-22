@@ -141,6 +141,11 @@ class Producto{
         return $productos;
     }
 
+    public function getRandom($limit){
+        $productosa = $this->db->query("SELECT * FROM PRODUCTOS ORDER BY RAND() lIMIT $limit");
+        return $productosa;
+    }
+
     public function getOne(){
         $sql = "SELECT p.*, c.nombre AS 'categoria', s.nombre AS 'serie', s.descripcion AS 'serieDescripcion', ".
                 "s.ventajas AS 'serieVentajas', s.incluye1, s.incluye2, s.incluye3, ".
@@ -154,5 +159,7 @@ class Producto{
         $producto=$this->db->query($sql);
         return $producto->fetch_object();
     }
+
+    
 
 }//Termina clase producto

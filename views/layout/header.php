@@ -11,19 +11,18 @@
     <link rel="shortcut icon" type="image/png" href="<?= base_url ?>assets/images/icons/fav-icon.png" />
 
     <!-- Bootstrap CSS -->
-   
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
+    <link href="<?= base_url ?>assets/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,700" rel="stylesheet">
     <link rel="stylesheet" href="<?= base_url ?>assets/css/owl.theme.min.css">
     <link rel="stylesheet" href="<?= base_url ?>assets/css/owl.carousel.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="<?= base_url ?>assets/aos-master/dist/aos.css" rel="stylesheet" type="text/css">
 
     <!-- MAGNIFIC POPUP--->
     <link rel="stylesheet" href="<?= base_url ?>assets/css/magnific-popup.css">
 
     <link rel="stylesheet" href="<?= base_url ?>assets/css/hamburgers.css">
-    <link rel="stylesheet" href="<?=base_url?>assets/css/sb-admin.min.css">
+    <link rel="stylesheet" href="<?= base_url ?>assets/css/bootstrap.css">
     <link rel="stylesheet" href="<?= base_url ?>assets/css/style.css">
 
     <script type="text/javascript">
@@ -62,9 +61,9 @@
                     <span class="header-oculto">E-MAIL</span>
                 </a>
             </li>
-            <?php if(isset($_SESSION['identity'])): ?>
+            <?php if (isset($_SESSION['identity'])) : ?>
             <li class="nav-item">
-                <a class="nav-link header-oculto" href="<?=base_url?>usuario/logout">
+                <a class="nav-link header-oculto" href="<?= base_url ?>usuario/logout">
                     <i class="fas fa-sign-out-alt"></i>
                     <span class="header-oculto">CERRAR SESIÓN</span>
                 </a>
@@ -85,7 +84,7 @@
             <li class="nav-item">
                 <a class="nav-link " href="ventas@greenmatik.com" style="color:white"><i class="fas fa-envelope" style="color:white"></i> <span class="barra-movil">E-mail</span></a>
             </li>
-            
+
 
         </ul>
     </nav>

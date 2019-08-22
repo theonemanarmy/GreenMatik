@@ -49,15 +49,15 @@
                     </div>
 
                     <div class="row">
-                        <a onclick="history.back();"> 
+                        <a onclick="history.back();">
                             <button class="btn btn-productos-claro mont">
                                 <h6>
-                                    <i class="fas fa-undo"></i> 
+                                    <i class="fas fa-undo"></i>
                                     <strong>Regresar</strong>
                                 </h6>
                             </button>
                         </a>
-                        <a href="contacto.php"> 
+                        <a href="<?= base_url ?>index/contact">
                             <button class="btn btn-productos btn-productos-oculto mont" id="prueba">
                                 <strong>Contáctanos</strong>
                             </button>
@@ -94,78 +94,78 @@
                                 <tr>
                                     <th scope="row"></th>
                                     <td>Numero de cepillos</td>
-                                    <td><?=$prod->numeroCepillos?></td>
+                                    <td><?= $prod->numeroCepillos ?></td>
                                 </tr>
                                 <tr>
 
                                     <th scope="row"></th>
                                     <td>Área de montaje</td>
-                                    <td><?=$prod->areaDeMontaje?></td>
+                                    <td><?= $prod->areaDeMontaje ?></td>
                                 </tr>
 
                                 <tr>
                                     <th scope="row"></th>
                                     <td>Unidades por hora</td>
-                                    <td><?=$prod->unidadesPorHora?></td>
+                                    <td><?= $prod->unidadesPorHora ?></td>
                                 </tr>
 
                                 <tr>
                                     <th scope="row"></th>
                                     <td>Potencial Total</td>
-                                    <td><?=$prod->potencialTotal?></td>
+                                    <td><?= $prod->potencialTotal ?></td>
                                 </tr>
 
                                 <tr>
                                     <th scope="row"></th>
                                     <td>Longitud Carril</td>
-                                    <td><?=$prod->longitudCarril?></td>
+                                    <td><?= $prod->longitudCarril ?></td>
                                 </tr>
 
                                 <tr>
                                     <th scope="row"></th>
                                     <td>Dimensiones Equipo</td>
-                                    <td><?=$prod->dimensionesEquipo?></td>
+                                    <td><?= $prod->dimensionesEquipo ?></td>
                                 </tr>
 
                                 <tr>
                                     <th scope="row"></th>
                                     <td>Medida Vehiculo</td>
-                                    <td><?=$prod->medidaVehiculo?></td>
+                                    <td><?= $prod->medidaVehiculo ?></td>
                                 </tr>
 
                                 <tr>
                                     <th scope="row"></th>
                                     <td>Consumo Vehículo</td>
-                                    <td><?=$prod->consumoVehiculo?></td>
+                                    <td><?= $prod->consumoVehiculo ?></td>
                                 </tr>
 
                                 <tr>
                                     <th scope="row"></th>
                                     <td>Fabricación</td>
-                                    <td><?=$prod->fabricacion?></td>
+                                    <td><?= $prod->fabricacion ?></td>
                                 </tr>
 
                                 <tr>
                                     <th scope="row"></th>
                                     <td>Personalización</td>
-                                    <td><?=$prod->personalizacion?></td>
+                                    <td><?= $prod->personalizacion ?></td>
                                 </tr>
 
                                 <tr>
                                     <th scope="row"></th>
                                     <td>Garantía</td>
-                                    <td><?=$prod->garantia?></td>
+                                    <td><?= $prod->garantia ?></td>
                                 </tr>
 
-                                
+
                             </tbody>
                         </table>
 
                     </div>
                 </div>
 
-                <?php else: ?>
-                    <h3>No hay productos actualmente!</h3>
+                <?php else : ?>
+                <h3>No hay productos actualmente!</h3>
                 <?php endif; ?>
                 <!--Termina if de imprimir todo del producto-->
 
@@ -234,9 +234,11 @@
                                     </div>
                                 </div>
                                 <!--end media-->
-                                <p class="gray mt-10">Todos los modelos de túnel de lavado incluyen la estructura de
+                                <p class="gray mt-10">
+                                    Todos los modelos de túnel de lavado incluyen la estructura de
                                     acero galvanizado del cerramiento, las cubiertas superiores y laterales que pueden
-                                    ser de cristal, policarbonato o PVC se cotizan aparte. </p>
+                                    ser de cristal, policarbonato o PVC se cotizan aparte.
+                                </p>
                             </a>
                         </div>
                         <!--col-end-->
@@ -288,16 +290,17 @@
             <h3 class="blue"><strong>OTROS PRODUCTOS RELACIONADOS</strong></h3>
             <div class="row">
                 <?php
-                $query = "SELECT * FROM informacion ORDER BY RAND() LIMIT 0,3";
-                $resultado = $conexion->query($query);
-                while ($row = $resultado->fetch_assoc()) :
+                    var_dump($productosa);
+                    die();
+                while ($prodRandom = $productosa->fetch_object()) :
+
                     ?>
                 <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
                     <div class="item-catalogo">
-                        <a href="producto.php?id=<?php echo $row['id']; ?>">
-                            <img src="data:image/jpg;base64, <?php echo base64_encode($row['img']); ?>" alt="" class="img-fluid imagenProducto">
+                        <a href="producto.php?id=<?= $prodRandom->id ?>">
+                            <img src="data:image/jpg;base64, <?= base64_encode($prodRandom->imagen); ?>" alt="" class="img-fluid imagenProducto">
                             <div class="text-item">
-                                <h6 class="nombreProducto"><?php echo $row['nombre']; ?></h6>
+                                <h6 class="nombreProducto"><?= $prodRandom->nombre ?></h6>
                             </div>
                         </a>
                     </div>

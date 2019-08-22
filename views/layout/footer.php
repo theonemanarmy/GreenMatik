@@ -34,13 +34,13 @@
 
             <div class="col-6 col-sm-6 col-lg-3 ">
                 <h6><strong>MENÚ</strong> </h6>
-                <a class="footer-link activo" href="index.php"><span>INICIO</span></a> <br>
-                <a class="footer-link" href="servicios.php"><span>SERVICIOS </span></a> <br>
-                <a class="footer-link" href="portafolio.php"><span>CATÁLOGO DE PRODUCTOS</span></a><br>
-                <a class="footer-link" href="refacciones.php"><span>REFACCIONES</span></a><br>
-                <a class="footer-link" href="nosotros.php"><span>NOSOTROS</span></a><br>
-                <a class="footer-link" href="faq.php"><span>PREGUNTAS FRECUENTES</span></a><br>
-                <a class="footer-link mb-20" href="contacto.php"><span class="">CONTACTO</span></a>
+                <a class="footer-link activo" href="<?= base_url ?>index/home"><span>INICIO</span></a> <br>
+                <a class="footer-link" href="<?= base_url ?>index/services"><span>SERVICIOS </span></a> <br>
+                <a class="footer-link" href="<?= base_url ?>producto/catalogue"><span>CATÁLOGO DE PRODUCTOS</span></a><br>
+                <a class="footer-link" href="<?= base_url ?>index/spareParts"><span>REFACCIONES</span></a><br>
+                <a class="footer-link" href="<?= base_url ?>index/us"><span>NOSOTROS</span></a><br>
+                <a class="footer-link" href="<?= base_url ?>index/faq"><span>PREGUNTAS FRECUENTES</span></a><br>
+                <a class="footer-link mb-20" href="<?= base_url ?>index/contact"><span class="">CONTACTO</span></a>
                 <!-- <h6 class=" margen-movil2  "><strong>SÍGUENOS</strong></h6>
                 <a class="mostrar footer-link" href="/" target="_blank"> <i class="fab fa-facebook-f dos  "> </i> @friocontrol </a>
                 <h6 class="oculto margen-movil2  "><strong>SÍGUENOS</strong></h6>
@@ -59,27 +59,16 @@
 
 
 <!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
-</script>
-
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
-</script>
+<script src="<?= base_url ?>assets/js/bootstrap.js"></script>
 <script src="<?= base_url ?>assets/js/owl.carousel.min.js"> </script>
 <script type="text/javascript" src="<?= base_url ?>/assets/js/jquery.magnific-popup.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="<?= base_url ?>assets/aos-master/dist/aos.js"></script>
 
 
 <script src="<?= base_url ?>assets/js/custom.js"></script>
 <script src="<?= base_url ?>assets/js/jquery.backstretch.min.js"></script>
 <script src="<?= base_url ?>assets/js/jquery.simple-text-rotator.min.js"></script>
 
-<script>
-
-</script>
-<script>
-
-</script>
 <script>
     AOS.init();
 </script>

@@ -15,8 +15,8 @@
                     </p>
 
                     <div>
-                        <a href="<?= base_url ?>contacto.php"><button class="btn btn-border-white mont">Llámanos</button></a>
-                        <a href="<?= base_url ?>contacto.php"><button class="btn btn-blanco ml-10 mont"><strong>Contáctanos</strong></button></a>
+                        <a href="<?= base_url ?>index/contact"><button class="btn btn-border-white mont">Llámanos</button></a>
+                        <a href="<?= base_url ?>index/contact"><button class="btn btn-blanco ml-10 mont"><strong>Contáctanos</strong></button></a>
                     </div>
                 </div>
             </div>
@@ -29,8 +29,8 @@
                         el medio ambiente y cuidar tu bolsillo.
                     </p>
                     <div>
-                        <a href="<?= base_url ?>contacto.php"><button class="btn btn-border-white mont">Contáctanos</button></a>
-                        <a href="<?= base_url ?>catalogo.php"><button class="btn btn-blanco ml-10 mont"><strong>Catálogo</strong></button></a>
+                        <a href="<?= base_url ?>index/contact"><button class="btn btn-border-white mont">Contáctanos</button></a>
+                        <a href="<?= base_url ?>producto/catalogue"><button class="btn btn-blanco ml-10 mont"><strong>Catálogo</strong></button></a>
                     </div>
                 </div>
             </div>
@@ -44,7 +44,7 @@
                     </p>
                     <div>
                         <a href="<?= base_url ?>contacto.php"><button class="btn btn-border-white mont">Llámanos</button></a>
-                        <a href="<?= base_url ?>contacto.php"><button class="btn btn-blanco ml-10 mont"><strong>Contáctanos</strong></button></a>
+                        <a href="<?= base_url ?>index/contact"><button class="btn btn-blanco ml-10 mont"><strong>Contáctanos</strong></button></a>
                     </div>
                 </div>
             </div>
@@ -69,7 +69,7 @@
 
 
         <a href="<?= base_url ?>contacto.php"><button class="btn btn-border-white mont">Llámanos</button></a>
-        <a href="<?= base_url ?>contacto.php"><button class="btn btn-blanco ml-10 mont"><strong>Contáctanos</strong></button></a>
+        <a href="<?= base_url ?>index/contact"><button class="btn btn-blanco ml-10 mont"><strong>Contáctanos</strong></button></a>
     </div>
     </div>
     </div>
@@ -219,7 +219,7 @@
                 <p>Mediante la combinación de un reciclador físico, biológico o mixto, eficientes rejillas de
                     recuperación y el cerramiento optimizado del área de lavado.</p>
 
-                <a href="catalogo.php"><button class="btn btn-blanco">Reciclar</button></a>
+                <a href="<?= base_url ?>producto/catalogue"><button class="btn btn-blanco">Reciclar</button></a>
 
             </div>
         </div>
@@ -343,16 +343,11 @@
                     fácil ...</p>
             </div>
 
-
-
-
-
-
         </div>
     </div>
 
     <div class="row justify-content-center">
-        <a href="catalogo.php"> <button class="btn btn-ver-catalogo mont"> Ver Catálogo </button></a>
+        <a href="<?= base_url ?>producto/catalogue"> <button class="btn btn-ver-catalogo mont"> Ver Catálogo </button></a>
 
     </div>
 
@@ -369,7 +364,7 @@
                 <h2 class="callto-title"> <span class="white"> ¿Deseas más información? </span> </h2>
                 <p class="white mt-20 mb-50">Llamanos y recibe más información personalizada para iniciar tu propio
                     negocio de autolavado con la ayuda y calidad de GreenMatik.</p>
-                <a href="contacto.php"><button class="btn btn-border-white mont">Contáctanos</button></a>
+                <a href="<?= base_url ?>index/contact"><button class="btn btn-border-white mont">Contáctanos</button></a>
                 <a href="#"><button class="btn btn-blanco ml-10 mont"><strong>Llámanos</strong></button></a>
 
             </div>
