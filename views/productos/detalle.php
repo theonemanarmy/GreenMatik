@@ -1,9 +1,7 @@
     <section class="producto">
         <div class="container">
             <div class="row">
-                <?php
-                if (isset($prod)) :
-                    ?>
+                <?php if (isset($prod)) : ?>
                 <div class="col-xs-12 col-md-6">
                     <div class="row align-center">
 
@@ -165,7 +163,7 @@
                 </div>
 
                 <?php else : ?>
-                <h3>No hay productos actualmente!</h3>
+                    <h3>No hay productos actualmente!</h3>
                 <?php endif; ?>
                 <!--Termina if de imprimir todo del producto-->
 
@@ -284,7 +282,7 @@
         </div>
     </section>
 
-
+    <!--Productos relacionados-->
     <section class="productos-relacionados">
         <div class="container">
             <h3 class="blue"><strong>OTROS PRODUCTOS RELACIONADOS</strong></h3>
@@ -292,10 +290,10 @@
                 <?php while ($pro = $productosr->fetch_object()) : ?>
                 <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
                     <div class="item-catalogo">
-                        <a href="<?= $pro->id ?>">
+                        <a href="<?= base_url ?>producto/detalle&id=<?= $pro->id ?>">
                             <img src="data:image/jpg;base64, <?= base64_encode($pro->imagen); ?>" alt="" class="img-fluid imagenProducto">
                             <div class="text-item">
-                                <h6 class="nombreProducto"><?= $pro->nombre ?></h6>
+                                <h6 class="blue" style="font-weight:700;"><?= $pro->categoria ?> <?= $pro->nombre ?> </h6>
                             </div>
                         </a>
                     </div>

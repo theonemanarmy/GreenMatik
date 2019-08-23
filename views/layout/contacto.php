@@ -19,9 +19,12 @@
   <div class="container">
 
     <h3 class="blue2"><strong>CONTÁCTANOS</strong></h3>
-    <div id="mensajeCampos" class="errores">Todos los campos son requeridos
+    <div id="mensajeCampos" class="errores">
+      Todos los campos son requeridos
     </div>
+
     <br>
+
     <div class="row">
       <div class="col-xs-12 col-md-6">
 
@@ -66,8 +69,10 @@
             <div class="form-check ">
               <input class="form-check-input" name="terminos" type="checkbox" value="" id="c_terminos">
               <label class="form-check-label" for="defaultCheck1">
-                <a class="aviso2" href="aviso-privacidad.php" target="_blank">Acepto términos de
-                  privacidad</a>
+                <a class="aviso2" href="<?= base_url ?>index/terminosYCondiciones">
+                  Acepto términos de
+                  privacidad
+                </a>
               </label>
               <div id="mensaje7" class="errores">Debes aceptar los términos y condiciones</div>
             </div>

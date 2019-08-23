@@ -4,8 +4,8 @@
         <p class="white mt-10 mb-50">Conoce nuestra increíble línea de productos pensada 100% en el mercado Mexicano.
 
         </p>
-        <a href="contacto.php"><button class="btn btn-border-white mont">Contáctanos</button></a>
-        <a href="contacto.php"><button class="btn btn-blanco ml-10 mont"><i class="fas fa-download"></i> <strong>Catálogo</strong></button></a>
+        <a href="<?=base_url?>index/contact"><button class="btn btn-border-white mont">Contáctanos</button></a>
+        <a href="<?=base_url?>producto/catalogue"><button class="btn btn-blanco ml-10 mont"><i class="fas fa-download"></i> <strong>Catálogo</strong></button></a>
     </div>
 </section>
 

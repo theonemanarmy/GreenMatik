@@ -1,6 +1,9 @@
 <?php
 
 class indexController{
+
+    //funciones del index
+
     public function home(){
         require_once 'views/layout/home.php';
     }
@@ -23,5 +26,27 @@ class indexController{
 
     public function contact(){
         require_once 'views/layout/contacto.php';
+    }
+
+    //funciones de los servicios
+    public function servicioAsesoria(){
+        require_once 'views/servicios/servicio-asesoria.php';
+    }
+
+    public function servicioAsistencia(){
+        require_once 'views/servicios/servicio-asistencia.php';
+    }
+
+    public function servicioGarantias(){
+        require_once 'views/servicios/servicio-garantias.php';
+    }
+
+    public function llaveMano(){
+        require_once 'views/servicios/llave-mano.php';
+    }
+
+    //Función términos y condiciones
+    public function terminosYCondiciones(){
+        require_once 'views/terminos/aviso-privacidad.php';
     }
 }//termina controller

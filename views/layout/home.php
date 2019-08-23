@@ -63,15 +63,25 @@
 
 <section id="inter-movil">
     <div class="container">
-        <h3 class="rotate mont " style="color: #fff; font-weight:700"><strong>Invierte en un Negocio Rentable |
+        <h3 class="rotate mont" style="color: #fff; font-weight:700">
+            <strong>
+                Invierte en un Negocio Rentable |
                 Autolavado Llave en mano |
-                ¡Mejora tu equipo y ahorra costos</strong></h3> <br>
+                ¡Mejora tu equipo y ahorra costos
+            </strong>
+        </h3>
+        <br>
 
-
-        <a href="<?= base_url ?>contacto.php"><button class="btn btn-border-white mont">Llámanos</button></a>
-        <a href="<?= base_url ?>index/contact"><button class="btn btn-blanco ml-10 mont"><strong>Contáctanos</strong></button></a>
-    </div>
-    </div>
+        <a href="#">
+            <button class="btn btn-border-white mont">
+                Llámanos
+            </button>
+        </a>
+        <a href="<?= base_url ?>index/contact">
+            <button class="btn btn-blanco ml-10 mont">
+                <strong>Contáctanos</strong>
+            </button>
+        </a>
     </div>
 </section>
 
@@ -92,7 +102,7 @@
         </div>
         <div class="row text-left services">
             <div class="col-xs-12 col-sm-6 col-lg-3  text-center">
-                <a href="catalogo.php" style="color:black">
+                <a href="" style="color:black">
                     <img src="<?= base_url ?>assets/images/icons/01.png " alt="">
 
                     <h6 class=" servicios-margin mont"> <br> <strong>Equipo de Autolavado</strong></h6>
@@ -112,17 +122,21 @@
                 <a href="llave-mano.php" style="color:black">
                     <img src="<?= base_url ?>assets/images/icons/03.png" alt="">
                     <h6 class=" servicios-margin mont"> <br> <strong>Tu Negocio Llave en Mano</strong></h6>
-                    <p class="gray">¿Buscas Invertir en un negocio rentable con recuperación de inversión en 18 meses?
+                    <p class="gray">
+                        ¿Buscas Invertir en un negocio rentable con 
+                        recuperación de inversión en 18 meses?
                     </p>
                 </a> </div>
             <div class="col-xs-12 col-sm-6  col-lg-3  text-center">
                 <a href="contacto.php" style="color:black">
                     <img src="<?= base_url ?>assets/images/icons/04.png" alt="">
                     <h6 class=" servicios-margin mont"> <br> <strong>Autolavado para flotillas</strong></h6>
-                    <p class="gray">¿Tienes una empresa de flotilla de vehículos, quieres mejorar tu productividad,
-                        ahorrar tiempos y dinero
-                        ?</p>
-                </a> </div>
+                    <p class="gray">
+                        ¿Tienes una empresa de flotilla de vehículos, quieres mejorar tu productividad,
+                        ahorrar tiempos y dinero?
+                    </p>
+                </a> 
+            </div>
         </div>
     </div>
 
@@ -144,7 +158,7 @@
         </div>
         <div class="row text-left mt-70">
             <div class="col-xs-12 col-sm-6 col-lg-6  left mt-20">
-                <a href="servicio-asesoria" style="color:black">
+                <a href="<?= base_url ?>index/servicioAsesoria" style="color:black">
                     <div class="media">
                         <img class="mr-3" src="<?= base_url ?>assets/images/icons/servicios-01.png" alt=" Asesoría  Personalizada de Negocios">
                         <div class="media-body">
@@ -157,7 +171,7 @@
             </div>
 
             <div class="col-xs-12 col-sm-6 col-lg-6  left mt-20">
-                <a href="servicio-garantias" style="color:black">
+                <a href="<?= base_url ?>index/servicioGarantias" style="color:black">
                     <div class="media">
                         <img class="mr-3" src="<?= base_url ?>assets/images/icons/servicios-02.png" alt=" Asesoría  Personalizada de Negocios">
                         <div class="media-body">
@@ -169,7 +183,7 @@
                 </a> </div>
 
             <div class="col-xs-12 col-sm-6 col-lg-6  left mt-20">
-                <a href="servicio-asistencia" style="color:black">
+                <a href="<?= base_url ?>index/servicioAsistencia" style="color:black">
                     <div class="media">
                         <img class="mr-3" src="<?= base_url ?>assets/images/icons/servicios-03.png" alt=" Asesoría  Personalizada de Negocios">
                         <div class="media-body">
@@ -181,7 +195,7 @@
                 </a> </div>
 
             <div class="col-xs-12 col-sm-6 col-lg-6  left mt-20">
-                <a href="llave-mano.php" style="color:black">
+                <a href="<?= base_url ?>index/llaveMano" style="color:black">
                     <div class="media">
                         <img class="mr-3" src="<?= base_url ?>assets/images/icons/servicios-04.png" alt=" Asesoría  Personalizada de Negocios">
                         <div class="media-body">
@@ -190,7 +204,7 @@
                     </div>
                     <p class="gray mt-20">Si tienes un gran sueño pero no sabes como hacerlo realidad, Nosotros nos
                         ocupamos de cada detalle y te entregamos un proyecto llave en mano con ¡TODO!</p>
-                </a> 
+                </a>
             </div>
         </div>
     </div>
@@ -312,7 +326,7 @@
             <!--camiones grandes-->
 
             <div class="item-carousel">
-                <a href="catalogo.php"> <img src="<?= base_url ?>assets/images/APU/APU2.jpg" alt="">
+                <a href="<?= base_url ?>producto/catalogue"> <img src="<?= base_url ?>assets/images/APU/APU2.jpg" alt="">
                     <h5 class="item-title mont">TRIPAC ENVIDIA ELECTRIC APU</h5>
                 </a>
                 <p class="item-description">El sistema TriPac Envidia presenta una opción totalmente eléctrica,limpia
@@ -320,7 +334,7 @@
 
             </div>
             <div class="item-carousel">
-                <a href="catalogo.php"> <img src="<?= base_url ?>assets/images/S/prec_s700_500.jpg" alt="">
+                <a href="<?= base_url ?>producto/catalogue"> <img src="<?= base_url ?>assets/images/S/prec_s700_500.jpg" alt="">
                     <h5 class="item-title mont">PRECEDENT S-700</h5> <br>
                 </a>
                 <p class="item-description">Diseñado para ser amigable con el medio ambiente Microprocesador ...
@@ -329,7 +343,7 @@
 
 
             <div class="item-carousel">
-                <a href="catalogo.php"> <img src="<?= base_url ?>assets/images/T/T-1080 SPECTRUM MULTI-TEMP.jpg" alt="">
+                <a href="<?= base_url ?>producto/catalogue"> <img src="<?= base_url ?>assets/images/T/T-1080 SPECTRUM MULTI-TEMP.jpg" alt="">
                     <h5 class="item-title mont">T-1080 SPECTRUM MULTI-TEMP</h5>
                 </a>
                 <p class="item-description">Unidad de alto rendimiento Compresor reciprocarte X214 Control LED cabina de
@@ -337,7 +351,7 @@
             </div>
 
             <div class="item-carousel">
-                <a href="catalogo.php"> <img src="<?= base_url ?>assets/images/T/T-1080 SPECTRUM MULTI-TEMP.jpg" alt="">
+                <a href="<?= base_url ?>producto/catalogue"> <img src="<?= base_url ?>assets/images/T/T-1080 SPECTRUM MULTI-TEMP.jpg" alt="">
                     <h5 class="item-title mont">T-1080 SPECTRUM MULTI-TEMP</h5>
                 </a>
                 <p class="item-description">Unidad de alto rendimiento Compresor reciprocarte X214 Control LED cabina de

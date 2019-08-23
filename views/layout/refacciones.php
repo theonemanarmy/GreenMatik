@@ -6,8 +6,8 @@
             contamos con entrega inmediata en refacciones.</p>
 
         <div>
-            <a href="catalogo.php"><button class="btn btn-border-white mont">Ver Catálogo</button></a>
-            <a href="contacto.php"><button class="btn btn-blanco ml-10 mont"><strong>Contáctanos</strong></button></a>
+            <a href="<?=base_url?>producto/catalogue"><button class="btn btn-border-white mont">Ver Catálogo</button></a>
+            <a href="<?=base_url?>index/contact"><button class="btn btn-blanco ml-10 mont"><strong>Contáctanos</strong></button></a>
         </div>
     </div>
 
@@ -18,17 +18,34 @@
         <div class="row">
             <div class="col-xs-12 col-lg-6">
 
-                <h3 class="blue2"><strong>Entrega inmediata, listo para atender cualquier necesidad tanto para equipo
-                        GreenMatik como para otras Marcas.</strong></h3> <br>
-                <h4><strong>Envíos a todo México</strong></h4> <br>
+                <h3 class="blue2">
+                    <strong>Entrega inmediata, listo para atender cualquier 
+                        necesidad tanto para equipo
+                        GreenMatik como para otras Marcas.
+                    </strong>
+                </h3> 
+                
+                <br>
 
+                <h4>
+                    <strong>Envíos a todo México</strong>
+                </h4> 
+                
+                <br>
 
-                <p class="gray mont"> Contamos con las refacciones necesarias para que tu equipo GreenMatik nunca deje
-                    de funcionar. Solicítalo con tu vendedor o contáctanos aquí para la cotización y entrega de
-                    cualquier refaccion que necesites. </p>
+                <p class="gray mont"> 
+                    Contamos con las refacciones necesarias para que tu 
+                    equipo GreenMatik nunca deje
+                    de funcionar. Solicítalo con tu vendedor o contáctanos 
+                    aquí para la cotización y entrega de
+                    cualquier refaccion que necesites. 
+                </p>
 
                 <div class="row">
-                    <a href="contacto.php"><button class="btn btn-ver-catalogo-refacciones mont">Contáctanos</button>
+                    <a href="<?= base_url ?>index/contact">
+                        <button class="btn btn-ver-catalogo-refacciones mont">
+                            Contáctanos
+                        </button>
                     </a>
                 </div>
             </div>

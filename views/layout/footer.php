@@ -8,8 +8,18 @@
                     Un autolavado es un negocio rentable, invierte ahora y haremos realidad tus sueños a toda máquina.
                     Pregunta por nuestras soluciones de negocio. </p>
 
-                <p class="copy copy-oculto"> <br> © Copyright 2019 GREENMATIK, Todos los derechos reservados. <br><a class="footer-link" href="aviso-privacidad.php">Aviso de Privacidad </a> | <a class="footer-link " href="http://www.3e-digital.com/" target="_blank"> Sitio web diseñado por
-                        3e-Digital </a>
+                <p class="copy copy-oculto"> 
+                    <br> 
+                    © Copyright 2019 GREENMATIK, Todos los derechos 
+                    reservados. 
+                    <br>
+                    <a class="footer-link" href="<?=base_url?>index/terminosYCondiciones">
+                        Aviso de Privacidad 
+                    </a> 
+                    | 
+                    <a class="footer-link " href="http://www.3e-digital.com/" target="_blank"> 
+                        Sitio web diseñado por 3e-Digital 
+                    </a>
                 </p>
             </div>
             <div class="col-6 col-sm-6 col-lg-3">

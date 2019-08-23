@@ -8,7 +8,7 @@
                 todos nuestros procesos los valores que nos definen. </p>
             <div>
                 <a href="contacto.php"><button class="btn btn-border-white mont">Llámanos</button></a>
-                <a href="contacto.php"><button class="btn btn-blanco ml-10 mont"><strong>Contáctanos</strong></button></a>
+                <a href="<?= base_url ?>index/contact"><button class="btn btn-blanco ml-10 mont"><strong>Contáctanos</strong></button></a>
             </div>
         </div>
     </div>
@@ -20,16 +20,17 @@
             <div class="col-xs-12 col-sm-12 col-lg-6 left">
                 <div class="col-xs-12  left mostrar-row-md">
                     <img src="<?=base_url?>assets/images/callto.png" alt="GreenMatic" class="mb-50 ">
-
                 </div>
                 <h2 class="nosotros2"> <span class="blue"> Acerca de Nosotros</span> </h2>
 
-                <p class="gray mt-10 mont">Somos la primera empresa Mexicana que diseña y ofrece a sus clientes los
+                <p class="gray mt-10 mont">
+                    Somos la primera empresa Mexicana que diseña y ofrece a sus clientes los
                     mejores equipos de lavado automatizado de vehículos para México y Latinoamérica.
                     Los equipos GreenMatik son ensamblados en China en sinergia con el fabricante más innovador de
                     Asia, que tras 30 años de investigación continua para el desarrollo de nuevas tecnologías
                     aplicadas a la fabricación de túneles y puentes de lavado confiables y funcionales, le permitió
-                    obtener en 2016 la Certificación internacional ISO 9001.</p>
+                    obtener en 2016 la Certificación internacional ISO 9001.
+                </p>
             </div>
 
             <div class="col-xs-12 col-sm-6 col-lg-6  left ocultar-row-md">
@@ -40,25 +41,28 @@
                 <div class="media">
                     <img class="mr-3" src="<?=base_url?>assets/images/icons/about2.png" alt="HISTORIA">
                     <div class="media-body">
-                        <h6 class="mt-20 mont"><strong>HISTORIA</strong></h6>
-
+                        <h6 class="mt-20 mont">
+                            <strong>HISTORIA</strong>
+                        </h6>
                     </div>
                 </div>
-                <p class="gray mt-10 mont">GreenMatik llega a México y Latinoamérica con el objetivo de apoyar a
+                <p class="gray mt-10 mont">
+                    GreenMatik llega a México y Latinoamérica con el objetivo de apoyar a
                     empresas, emprendedores e inversionistas a desarrollar proyectos de autolavado rentables y
                     sostenibles, reduciendo costes de adquisición, instalación, instalación, operación y
                     mantenimiento, generando mayores ingresos con equipos de vanguardia que contribuyen a la
-                    conservación del medio ambiente a través de sus sistemas de reciclado de agua. </p>
+                    conservación del medio ambiente a través de sus sistemas de reciclado de agua. 
+                </p>
             </div>
             <div class="col-xs-12 col-sm-6 col-lg-6  left ">
                 <div class="media">
                     <img class="mr-3" src="<?=base_url?>assets/images/icons/about1.png" alt=" MISIÓN">
                     <div class="media-body">
                         <h6 class="mt-20 mont"><strong>MISIÓN</strong></h6>
-
                     </div>
                 </div>
-                <p class="gray mt-10 mont">Proporcionar a nuestros clientes equipos robustos de alto rendimiento,
+                <p class="gray mt-10 mont">
+                    Proporcionar a nuestros clientes equipos robustos de alto rendimiento,
                     con la mejor relación calidad-precio del mercado, y unos costes de mantenimiento
                     sorprendentemente bajos, que desde hace años satisfacen con éxito los mercados asiáticos y
                     europeos.

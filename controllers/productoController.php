@@ -5,6 +5,7 @@ require_once 'models/producto.php';
 class productoController{
 
     public function catalogue(){
+        //Sacar todos los productos
         $producto = new Producto();
         $productos = $producto->getAll();
 
@@ -13,6 +14,7 @@ class productoController{
     }
 
     public function detalle(){
+        //Sacar prdocto por id
         if(isset($_GET['id'])){
             $id = $_GET['id'];
             $producto = new Producto();
@@ -20,11 +22,11 @@ class productoController{
             $prod = $producto->getOne();
         }
 
+        //Sacar productos Random
         $prods = new Producto();
         $productosr = $prods->getRand(4);
 
         //renderizar vista
         require_once 'views/productos/detalle.php';
     }
-
 }//Termina ProductoController
