@@ -7,6 +7,14 @@ class Producto{
     private $caracteristicas_id;
     private $nombre;
     private $imagen;
+    private $descripcion1;
+    private $descripcion2;
+    private $descripcion3;
+    private $descripcion4;
+    private $descripcion5;
+    private $descripcion6;
+    private $descripcion7;
+    private $descripcion8;
     private $db;
 
     public function __construct()
@@ -134,6 +142,168 @@ class Producto{
         return $this;
     }
 
+       /**
+     * Get the value of descripcion1
+     */ 
+    public function getDescripcion1()
+    {
+        return $this->descripcion1;
+    }
+
+    /**
+     * Set the value of descripcion1
+     *
+     * @return  self
+     */ 
+    public function setDescripcion1($descripcion1)
+    {
+        $this->descripcion1 = $descripcion1;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of descripcion2
+     */ 
+    public function getDescripcion2()
+    {
+        return $this->descripcion2;
+    }
+
+    /**
+     * Set the value of descripcion2
+     *
+     * @return  self
+     */ 
+    public function setDescripcion2($descripcion2)
+    {
+        $this->descripcion2 = $descripcion2;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of descripcion3
+     */ 
+    public function getDescripcion3()
+    {
+        return $this->descripcion3;
+    }
+
+    /**
+     * Set the value of descripcion3
+     *
+     * @return  self
+     */ 
+    public function setDescripcion3($descripcion3)
+    {
+        $this->descripcion3 = $descripcion3;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of descripcion4
+     */ 
+    public function getDescripcion4()
+    {
+        return $this->descripcion4;
+    }
+
+    /**
+     * Set the value of descripcion4
+     *
+     * @return  self
+     */ 
+    public function setDescripcion4($descripcion4)
+    {
+        $this->descripcion4 = $descripcion4;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of descripcion5
+     */ 
+    public function getDescripcion5()
+    {
+        return $this->descripcion5;
+    }
+
+    /**
+     * Set the value of descripcion5
+     *
+     * @return  self
+     */ 
+    public function setDescripcion5($descripcion5)
+    {
+        $this->descripcion5 = $descripcion5;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of descripcion6
+     */ 
+    public function getDescripcion6()
+    {
+        return $this->descripcion6;
+    }
+
+    /**
+     * Set the value of descripcion6
+     *
+     * @return  self
+     */ 
+    public function setDescripcion6($descripcion6)
+    {
+        $this->descripcion6 = $descripcion6;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of descripcion7
+     */ 
+    public function getDescripcion7()
+    {
+        return $this->descripcion7;
+    }
+
+    /**
+     * Set the value of descripcion7
+     *
+     * @return  self
+     */ 
+    public function setDescripcion7($descripcion7)
+    {
+        $this->descripcion7 = $descripcion7;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of descripcion8
+     */ 
+    public function getDescripcion8()
+    {
+        return $this->descripcion8;
+    }
+
+    /**
+     * Set the value of descripcion8
+     *
+     * @return  self
+     */ 
+    public function setDescripcion8($descripcion8)
+    {
+        $this->descripcion8 = $descripcion8;
+
+        return $this;
+    }
+
+    
+
     public function getAll(){
         $sql = "SELECT p.*, c.nombre AS 'categoria' FROM PRODUCTOS p ".
                 "INNER JOIN CATEGORIAS c ON p.categoria_id = c.id;";
@@ -141,9 +311,9 @@ class Producto{
         return $productos;
     }
 
-    public function getRandom($limit){
-        $productosa = $this->db->query("SELECT * FROM PRODUCTOS ORDER BY RAND() lIMIT $limit");
-        return $productosa;
+    public function getRand($limit){
+        $productosr = $this->db->query("SELECT * FROM PRODUCTOS ORDER BY RAND() LIMIT $limit");
+        return $productosr;
     }
 
     public function getOne(){
@@ -159,7 +329,5 @@ class Producto{
         $producto=$this->db->query($sql);
         return $producto->fetch_object();
     }
-
-    
 
 }//Termina clase producto

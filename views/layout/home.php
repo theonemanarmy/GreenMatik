@@ -190,7 +190,8 @@
                     </div>
                     <p class="gray mt-20">Si tienes un gran sueño pero no sabes como hacerlo realidad, Nosotros nos
                         ocupamos de cada detalle y te entregamos un proyecto llave en mano con ¡TODO!</p>
-                </a> </div>
+                </a> 
+            </div>
         </div>
     </div>
 
@@ -326,7 +327,7 @@
                 </p>
             </div>
 
-            <!--Camioones Pequeños-->
+
             <div class="item-carousel">
                 <a href="catalogo.php"> <img src="<?= base_url ?>assets/images/T/T-1080 SPECTRUM MULTI-TEMP.jpg" alt="">
                     <h5 class="item-title mont">T-1080 SPECTRUM MULTI-TEMP</h5>
@@ -348,12 +349,9 @@
 
     <div class="row justify-content-center">
         <a href="<?= base_url ?>producto/catalogue"> <button class="btn btn-ver-catalogo mont"> Ver Catálogo </button></a>
-
     </div>
-
-    </div>
-
 </section>
+
 <section class="bg-callto">
     <div class="container">
         <div class="row">

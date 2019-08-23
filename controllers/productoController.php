@@ -3,13 +3,6 @@
 require_once 'models/producto.php';
 
 class productoController{
-    public function random(){
-        $producto= new Producto();
-        $productos= $producto->getRandom(1);
-        
-        //renderizar vista
-        require_once 'views/productos/detalle.php';
-    }
 
     public function catalogue(){
         $producto = new Producto();
@@ -27,7 +20,11 @@ class productoController{
             $prod = $producto->getOne();
         }
 
+        $prods = new Producto();
+        $productosr = $prods->getRand(4);
+
         //renderizar vista
         require_once 'views/productos/detalle.php';
     }
+
 }//Termina ProductoController

@@ -289,25 +289,18 @@
         <div class="container">
             <h3 class="blue"><strong>OTROS PRODUCTOS RELACIONADOS</strong></h3>
             <div class="row">
-                <?php
-                    var_dump($productosa);
-                    die();
-                while ($prodRandom = $productosa->fetch_object()) :
-
-                    ?>
+                <?php while ($pro = $productosr->fetch_object()) : ?>
                 <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
                     <div class="item-catalogo">
-                        <a href="producto.php?id=<?= $prodRandom->id ?>">
-                            <img src="data:image/jpg;base64, <?= base64_encode($prodRandom->imagen); ?>" alt="" class="img-fluid imagenProducto">
+                        <a href="<?= $pro->id ?>">
+                            <img src="data:image/jpg;base64, <?= base64_encode($pro->imagen); ?>" alt="" class="img-fluid imagenProducto">
                             <div class="text-item">
-                                <h6 class="nombreProducto"><?= $prodRandom->nombre ?></h6>
+                                <h6 class="nombreProducto"><?= $pro->nombre ?></h6>
                             </div>
                         </a>
                     </div>
                 </div>
-                <?php
-                endwhile;
-                ?>
+                <?php endwhile; ?>
             </div>
         </div>
     </section>
