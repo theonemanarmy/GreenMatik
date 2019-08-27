@@ -4,10 +4,14 @@
             <h1 class="titulo-refacciones">Nuestros Servicios
             </h1>
 
-            <p class="white mt-10 mb-50">En GreenMatik nos interesa que tu negocio sea rentable, es por ello que nosotros te llevamos de la mano en todo el proceso de negocio y te ofrecemos los mejores equipos de México y Latinoamérica. </p>
+            <p class="white mt-10 mb-50">
+                En GreenMatik nos interesa que tu negocio sea rentable, es por ello que nosotros
+                te llevamos de la mano en todo el proceso de negocio y te ofrecemos los mejores equipos
+                de México y Latinoamérica.
+            </p>
             <div>
-                <a href="contacto.php"><button class="btn btn-border-white mont">Llámanos</button></a>
-                <a href="#"><button class="btn btn-blanco ml-10 mont"><strong>Ver Catálogo</strong></button></a>
+                <a href="tel:8127480049"><button class="btn btn-border-white mont">Llámanos</button></a>
+                <a href="<?= base_url ?>producto/catalogue"><button class="btn btn-blanco ml-10 mont"><strong>Ver Catálogo</strong></button></a>
             </div>
         </div>
     </div>
@@ -19,9 +23,9 @@
 
         <div class="row text-left ">
             <div class="col-xs-12 col-sm-6 col-lg-6  left mt-20">
-                <a href="servicio-asesoria" style="color:black">
+                <a href="<?= base_url ?>index/servicioAsesoria" style="color:black">
                     <div class="media">
-                        <img class="mr-3" src="<?=base_url?>assets/images/icons/servicios-01.png" alt=" Asesoría  Personalizada de Negocios">
+                        <img class="mr-3" src="<?= base_url ?>assets/images/icons/servicios-01.png" alt=" Asesoría  Personalizada de Negocios">
                         <div class="media-body">
                             <h6 class="mt-0"><strong> Asesoría Personalizada <br> de Negocios</strong></h6>
                         </div>
@@ -31,9 +35,9 @@
             </div>
 
             <div class="col-xs-12 col-sm-6 col-lg-6  left mt-20">
-                <a href="servicio-garantias" style="color:black">
+                <a href="<?= base_url ?>index/servicioGarantias" style="color:black">
                     <div class="media">
-                        <img class="mr-3" src="<?=base_url?>assets/images/icons/servicios-02.png" alt=" Asesoría  Personalizada de Negocios">
+                        <img class="mr-3" src="<?= base_url ?>assets/images/icons/servicios-02.png" alt=" Asesoría  Personalizada de Negocios">
                         <div class="media-body">
                             <h6 class="mt-0"><strong> Garantías y Programas <br> Exclusivos Greenmatik</strong></h6>
                         </div>
@@ -42,9 +46,9 @@
                 </a> </div>
 
             <div class="col-xs-12 col-sm-6 col-lg-6  left mt-20">
-                <a href="servicio-asistencia" style="color:black">
+                <a href="<?= base_url ?>index/servicioAsistencia" style="color:black">
                     <div class="media">
-                        <img class="mr-3" src="<?=base_url?>assets/images/icons/servicios-03.png" alt=" Asesoría  Personalizada de Negocios">
+                        <img class="mr-3" src="<?= base_url ?>assets/images/icons/servicios-03.png" alt=" Asesoría  Personalizada de Negocios">
                         <div class="media-body">
                             <h6 class="mt-0"><strong> Servicio de Asistencia<br> Permanente</strong></h6>
                         </div>
@@ -53,15 +57,16 @@
                 </a> </div>
 
             <div class="col-xs-12 col-sm-6 col-lg-6  left mt-20">
-                <a href="llave-mano.php" style="color:black">
+                <a href="<?= base_url ?>index/llaveMano" style="color:black">
                     <div class="media">
-                        <img class="mr-3" src="<?=base_url?>assets/images/icons/servicios-04.png" alt=" Asesoría  Personalizada de Negocios">
+                        <img class="mr-3" src="<?= base_url ?>assets/images/icons/servicios-04.png" alt=" Asesoría  Personalizada de Negocios">
                         <div class="media-body">
                             <h6 class="mt-0"><strong> Autolavado Llave<br> en mano.</strong></h6>
                         </div>
                     </div>
                     <p class="gray mt-20">Si tienes un gran sueño pero no sabes como hacerlo realidad, Nosotros nos ocupamos de cada detalle y te entregamos un proyecto llave en mano con ¡TODO!</p>
-                </a> </div>
+                </a> 
+            </div>
         </div>
     </div>
 
@@ -71,7 +76,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-lg-7">
-                <img src="<?=base_url?>assets/images/callto-md.png" alt="GreenMatic" class="mostrar-callto-md mb-20">
+                <img src="<?= base_url ?>assets/images/callto-md.png" alt="GreenMatic" class="mostrar-callto-md mb-20">
             </div>
             <div class="col-xs-12 col-lg-5">
                 <h2 class="callto-title"> <span class="white"> A tu disposición cuando nos necesites.</span> </h2>
@@ -79,8 +84,8 @@
                     Por teléfono, mail y asistencia virtual. <br> <br>
 
                     Estamos conectados a tu negocio las 24 horas de los 365 días del año, para brindarte la asistencia técnica que merece tu sueño empresarial.</p>
-                <a href="#"><button class="btn btn-border-white mont"><strong>Llámanos</strong></button></a>
-                <a href="contacto.php"><button class="btn btn-blanco ml-10 mont"><strong>Contáctanos</strong></button></a>
+                <a href="tel:8127480049"><button class="btn btn-border-white mont"><strong>Llámanos</strong></button></a>
+                <a href="<?= base_url ?>index/contact"><button class="btn btn-blanco ml-10 mont"><strong>Contáctanos</strong></button></a>
 
             </div>
         </div>

@@ -530,7 +530,7 @@ h2.nosotros2 {
 }
 
 .blue2 {
-    color: #149447;
+    color: #0082C6;
 }
 
 .seccion1 {
@@ -769,17 +769,14 @@ ul.lista-refacciones {
 .ocultar-row-md {
     display: block;
 }
-#contacto {
-    z-index: 1;
-    background: url("../images/bg2.jpg") no-repeat ;
-      background-size: cover;
-     padding:   200px 0 100px 0;
+#Contacto {
+    background: #FAFAFA;    
 }
 .contact {
     padding: 70px 0;
 }
 .contact2 {
-    padding: 70px 0 0 0;
+    padding: 70px 0 70px 0;
 }
 .login-form{
     width: 50%;
@@ -815,6 +812,12 @@ ul.lista-refacciones {
     font-size: 14px;
     
 }
+
+#contact-form{
+    background: white;
+    padding: 40px;
+}
+
 a.contacto-tel {
     font-size: 14px;
     margin-bottom: 6px;

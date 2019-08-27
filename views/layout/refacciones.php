@@ -6,8 +6,8 @@
             contamos con entrega inmediata en refacciones.</p>
 
         <div>
-            <a href="<?=base_url?>producto/catalogue"><button class="btn btn-border-white mont">Ver Catálogo</button></a>
-            <a href="<?=base_url?>index/contact"><button class="btn btn-blanco ml-10 mont"><strong>Contáctanos</strong></button></a>
+            <a href="<?= base_url ?>producto/catalogue"><button class="btn btn-border-white mont">Ver Catálogo</button></a>
+            <a href="<?= base_url ?>index/contact"><button class="btn btn-blanco ml-10 mont"><strong>Contáctanos</strong></button></a>
         </div>
     </div>
 
@@ -19,26 +19,25 @@
             <div class="col-xs-12 col-lg-6">
 
                 <h3 class="blue2">
-                    <strong>Entrega inmediata, listo para atender cualquier 
-                        necesidad tanto para equipo
-                        GreenMatik como para otras Marcas.
+                    <strong>Entrega inmediata, listo para atender cualquier
+                        necesidad.
                     </strong>
-                </h3> 
-                
+                </h3>
+
                 <br>
 
-                <h4>
-                    <strong>Envíos a todo México</strong>
-                </h4> 
-                
+                <h6>
+                    <strong>Envíos a todo México y latinoamérica</strong>
+                </h6>
+
                 <br>
 
-                <p class="gray mont"> 
-                    Contamos con las refacciones necesarias para que tu 
+                <p class="gray mont">
+                    Contamos con las refacciones necesarias para que tu
                     equipo GreenMatik nunca deje
-                    de funcionar. Solicítalo con tu vendedor o contáctanos 
+                    de funcionar. Solicítalo con tu vendedor o contáctanos
                     aquí para la cotización y entrega de
-                    cualquier refaccion que necesites. 
+                    cualquier refaccion que necesites.
                 </p>
 
                 <div class="row">
@@ -50,29 +49,29 @@
                 </div>
             </div>
             <div class="col-xs-12 col-lg-6 img-refaccion text-center">
-                <div id="owl-refacciones" class="owl-carousel wow ">
-                    <?php
-                    //include('php/conexion.php');
+                <!--<div id="owl-refacciones" class="owl-carousel owl-theme wow ">
 
-                    //$query3 = "SELECT * FROM informacion where categoria ='otros' ";
-                    //$resultado = $conexion->query($query3);
-                    //while($row = $resultado->fetch_assoc()):                                
-                    ?>
                     <div class="owl-item">
                         <div class="item-catalogo">
-                            <a href="producto.php?id=<?php echo $row['id']; ?>">
-                                <img src="data:image/jpg;base64, <?php echo base64_encode($row['img']); ?>" alt="Productos" class="img-fluid">
-                                <div class="text-item">
-                                    <h6 class="nombreProducto mont"><strong><?php echo $row['nombre']; ?></strong></h6>
-                                </div>
-                            </a>
+                            <img src="<?=base_url?>assets/images/refacciones/refaccion1.jpg" alt="Productos" class="img-fluid">
+                            <div class="text-item">
+                                <h6 class="nombreProducto mont"><strong></strong></h6>
+                            </div>
                         </div>
                     </div>
-                    <?php
-                    //endwhile;
-                    ?>
+                    
+                    <div class="owl-item">
+                        <div class="item-catalogo">
+                            <img src="<?=base_url?>assets/images/refacciones/refaccion2.jpg" alt="Productos" class="img-fluid">
+                            <div class="text-item">
+                                <h6 class="nombreProducto mont"><strong></strong></h6>
+                            </div>
+                        </div>
+                    </div>
 
-                </div>
+                </div>-->
+
+                <img src="<?=base_url?>assets/images/refacciones/refaccion1.jpg" alt="Refacciones de GreenMatik" class="img-responsive">
             </div>
 
         </div>

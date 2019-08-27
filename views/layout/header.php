@@ -30,7 +30,7 @@
             var path = window.location.pathname.split("/").pop();
 
             if (path == '') {
-                path = '<?php echo base_url ?>index/home';
+                path = 'home.php';
             }
 
             var target = $('nav a[href="' + path + '"]');
@@ -44,7 +44,7 @@
     <div class="ir-arriba"><i class="fas fa-arrow-up"></i></div>
 
     <nav class="navbar header-oculto ">
-        <a class="navbar-brand" href="index.php">
+        <a class="navbar-brand" href="<?= base_url ?>index/home">
             <img src="<?= base_url ?>assets/images/brand.png" class="d-inline-block align-top header-oculto " alt="">
         </a>
 
@@ -53,10 +53,10 @@
             <span class="nav-link header-oculto"> <i class="far fa-clock"></i> <span class="header-oculto"><strong>SERVICIO 24 HORAS</strong></span></span>
         </li> -->
             <li class="nav-item">
-                <a class="nav-link header-oculto" href="tel:8001347336"><i class="fas fa-phone"></i> <span class="header-oculto">800 134 7336</span> </a>
+                <a class="nav-link header-oculto" href="tel:8127480049"><i class="fas fa-phone"></i> <span class="header-oculto">81 2748 0049</span> </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link header-oculto" href="ventas@greenmatik.com" target="_blank">
+                <a class="nav-link header-oculto" href="mailto:ventas@greenmatik.mx">
                     <i class="fas fa-envelope"></i>
                     <span class="header-oculto">E-MAIL</span>
                 </a>
@@ -82,10 +82,8 @@
                 <a class="nav-link " href="tel:018001347336" style="color:white"><i class="fas fa-phone" style="color:white"></i> <span class="barra-movil">Llamar</span> </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link " href="ventas@greenmatik.com" style="color:white"><i class="fas fa-envelope" style="color:white"></i> <span class="barra-movil">E-mail</span></a>
+                <a class="nav-link " href="mailto:ventas@greenmatik.mx" style="color:white"><i class="fas fa-envelope" style="color:white"></i> <span class="barra-movil">E-mail</span></a>
             </li>
-
-
         </ul>
     </nav>
 
@@ -96,7 +94,7 @@
                 <span class="hamburger-inner"></span>
             </span>
         </label>
-        <a href="index.php">
+        <a href="<?= base_url ?>index/home">
             <img class="nav-oculto-movil " src="<?= base_url ?>assets/images/brand.png" alt="logotipo" style="margin: -50px 0 12px 33%;">
         </a>
 

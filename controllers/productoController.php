@@ -24,7 +24,7 @@ class productoController{
 
         //Sacar productos Random
         $prods = new Producto();
-        $productosr = $prods->getRand(4);
+        $productosr = $prods->getRand(3);
 
         //renderizar vista
         require_once 'views/productos/detalle.php';

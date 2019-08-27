@@ -9,7 +9,7 @@ $("#owl-products").owlCarousel({
   });
 
   $("#owl-refacciones").owlCarousel({
-    items : 2,
+    items : 1,
     slideSpeed : 300,
     paginationSpeed : 400,
     autoPlay: 5000,

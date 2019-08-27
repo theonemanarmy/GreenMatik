@@ -8,7 +8,7 @@
 
     <div>
       <a href="#"><button class="btn btn-border-white mont">Ver ubicación</button></a>
-      <a href="#"><button class="btn btn-blanco ml-10 mont"><strong>Llámanos</strong></button></a>
+      <a href="tel:8127480049"><button class="btn btn-blanco ml-10 mont"><strong>Llámanos</strong></button></a>
     </div>
   </div>
 </section>
@@ -30,42 +30,48 @@
 
         <form action="mail/enviar.php" id="contact-form" method="post" role="form">
           <div class="ajax-hidden">
-            <?php
-            if (isset($_GET['error'])) :
-              echo '<p style="color:red;">' . $_GET['error'] . '</p>';
-            endif;
-            ?>
+
+            <p class="black">Nombre</p>
             <div class="form-group">
               <label class="sr-only" for="c_name">Nombre</label>
               <input type="text" id="c_name" class="form-control" name="nombre" placeholder="Nombre" onkeypress="return validarLetras(event);">
               <div id="mensaje1" class="errores">*Ingresa un nombre válido</div>
             </div>
 
+            <p class="black">Teléfono</p>
             <div class="form-group">
               <label class="sr-only" for="c_phone">Teléfono </label>
               <input type="tel" id="c_phone" class="form-control" name="telefono" placeholder="Teléfono" onkeypress="return validarNumeros(event);">
               <div id="mensaje2" class="errores">*Ingresa un télefono válido</div>
             </div>
+
+            <p class="black">E-mail</p>
             <div class="form-group">
               <label class="sr-only" for="c_email">E-mail </label>
               <input type="email" id="c_email" class="form-control" name="email" placeholder="E-mail">
               <div id="mensaje3" class="errores">Ingresa un e-mail válido</div>
             </div>
+
+            <p class="black">Estado</p>
             <div class="form-group">
               <label class="sr-only" for="c_name">Estado</label>
               <input type="text" id="c_estado" class="form-control" name="estado" placeholder="Estado" onkeypress="return validarLetras(event);">
               <div id="mensaje4" class="errores">Ingresa tu estado</div>
             </div>
+
+            <p class="black">Ciudad</p>
             <div class="form-group">
               <label class="sr-only" for="c_name">Ciudad</label>
               <input type="text" id="c_ciudad" class="form-control" name="ciudad" placeholder="Ciudad" onkeypress="return validarLetras(event);">
               <div id="mensaje5" class="errores">Ingresa tu ciudad</div>
             </div>
 
+            <p class="black">Mensaje</p>
             <div class="form-group">
               <textarea class="form-control" id="c_message" name="mensaje" rows="7" placeholder="Mensaje"></textarea>
               <div id="mensaje6" class="errores">Ingresa un mensaje válido</div>
             </div>
+
             <div class="form-check ">
               <input class="form-check-input" name="terminos" type="checkbox" value="" id="c_terminos">
               <label class="form-check-label" for="defaultCheck1">
@@ -76,6 +82,8 @@
               </label>
               <div id="mensaje7" class="errores">Debes aceptar los términos y condiciones</div>
             </div>
+
+
             <input type="submit" id="btnEnviar" value="ENVIAR" name="enviar" class="btn btn-enviar">
 
           </div>
@@ -87,20 +95,24 @@
       <div class="col-xs-12 col-sm-6  col-lg-4 filtr-item" category="Monterrey"></div>
     </div>
     <!--end row-->
+</section>
 
+<section id="ubications">
+
+  <div class="container">
     <div class="row contact2">
       <div class="col-xs-12 col-md-4">
         <div class="media">
           <img class="mr-3" src="<?= base_url ?>assets/images/icons/ubicacion.png" alt="Generic placeholder image">
           <div class="media-body">
             <h6 class="mt-0">Ubicación </h6>
-            <p class="contacto-text"> Ave Uno #160 <br> Col. Central de Carga, <br> Guadalupe, N.L.
+            <p class="contacto-text"> Calle: Presa Manuel Avila Camacho #105 <br> Col. S. C. O. P, <br> Guadalupe, N.L. <br> C. P. 67190 </p>
 
           </div>
         </div>
       </div>
       <div class="col-xs-12 col-md-4">
-        <div class="media ">
+        <div class="media">
           <img class="mr-3" src="<?= base_url ?>assets/images/icons/tel.png" alt="Generic placeholder image">
           <div class="media-body">
             <h6 class="mt-0">Teléfono </h6> <a class="contacto-tel" href="tel:8183347766">(81) 8334
@@ -114,18 +126,18 @@
           <img class="mr-3" src="<?= base_url ?>assets/images/icons/tel.png" alt="Generic placeholder image">
           <div class="media-body">
             <h6 class="mt-0">E-mail </h6>
-            <a class="contacto-tel" href="mailto:ventas@greenmatik.com">ventas@greenmatik.com</a>
+            <a class="contacto-tel" href="mailto:ventas@greenmatik.mx">ventas@greenmatik.mx</a>
           </div>
         </div>
       </div>
 
     </div>
+  </div>
+
 </section>
 
-
-
-<section class="">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3594.927275592708!2d-100.24018508452133!3d25.7068317836617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662eac1d343fecd%3A0x4e6e489ff6e132ad!2sAv.+3+675%2C+Central+de+Carga%2C+67129+Guadalupe%2C+N.L.!5e0!3m2!1ses!2smx!4v1545148032696" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+<section class="map">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.4025101966!2d-100.20132758553824!3d25.65794858368393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662c1b8cf080609%3A0xc84def865bbcb1af!2sPresa%20Manuel%20%C3%81vila%20Camacho%20105%2C%20S.C.O.P.%2C%20Guadalupe%2C%20N.L.!5e0!3m2!1ses!2smx!4v1566934642136!5m2!1ses!2smx" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 </section>
 
 <!--Validación de formulario con JQuery-->

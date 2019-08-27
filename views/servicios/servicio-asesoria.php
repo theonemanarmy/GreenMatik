@@ -8,7 +8,7 @@
                 <p class="white mt-10 mb-50">Nuestro equipo de asesores de negocio te aconsejará sobre los equipos y accesorios que mejor se adapten a tus necesidades, tomando como
                     referencia tus objetivos, preferencias y recursos. </p>
                 <div>
-                    <a href="<?= base_url ?>index/contact"><button class="btn btn-border-white mont">Llámanos</button></a>
+                    <a href="tel:8127480049"><button class="btn btn-border-white mont">Llámanos</button></a>
                     <a href="<?= base_url ?>producto/catalogue"><button class="btn btn-blanco ml-10 mont"><strong>Ver Catálogo</strong></button></a>
                 </div>
             </div>
@@ -91,7 +91,7 @@
                         los 365 días del año, para brindarte la asistencia
                         técnica que merece tu sueño empresarial.
                     </p>
-                    <a href="#">
+                    <a href="tel:8127480049">
                         <button class="btn btn-border-white mont">
                             <strong>Llámanos</strong>
                         </button>

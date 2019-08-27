@@ -15,7 +15,7 @@
                     </p>
 
                     <div>
-                        <a href="<?= base_url ?>index/contact"><button class="btn btn-border-white mont">Llámanos</button></a>
+                        <a href="tel:8127480049"><button class="btn btn-border-white mont">Llámanos</button></a>
                         <a href="<?= base_url ?>index/contact"><button class="btn btn-blanco ml-10 mont"><strong>Contáctanos</strong></button></a>
                     </div>
                 </div>
@@ -43,7 +43,7 @@
                         el medio ambiente y cuidar tu bolsillo.
                     </p>
                     <div>
-                        <a href="<?= base_url ?>contacto.php"><button class="btn btn-border-white mont">Llámanos</button></a>
+                        <a href="tel:8127480049"><button class="btn btn-border-white mont">Llámanos</button></a>
                         <a href="<?= base_url ?>index/contact"><button class="btn btn-blanco ml-10 mont"><strong>Contáctanos</strong></button></a>
                     </div>
                 </div>
@@ -72,7 +72,7 @@
         </h3>
         <br>
 
-        <a href="#">
+        <a href="tel:8127480049">
             <button class="btn btn-border-white mont">
                 Llámanos
             </button>
@@ -325,37 +325,62 @@
         <div id="owl-catalogo" class="owl-carousel wow ">
             <!--camiones grandes-->
 
-            <div class="item-carousel">
-                <a href="<?= base_url ?>producto/catalogue"> <img src="<?= base_url ?>assets/images/APU/APU2.jpg" alt="">
-                    <h5 class="item-title mont">TRIPAC ENVIDIA ELECTRIC APU</h5>
+            <div class="item-carousel text-center">
+                <a href="<?= base_url ?>producto/catalogue"> <img src="<?= base_url ?>assets/images/tsunami/TSUNAMI360.png" alt="">
+                    <h6 class="item-title mont">TSUNAMI 360 -4D</h6>
+                    <h6>FREE TOUCH - PUENTE DE LAVADO</h6>
+
                 </a>
-                <p class="item-description">El sistema TriPac Envidia presenta una opción totalmente eléctrica,limpia
-                    ...</p>
+                <p class="item-description">
+                    LAVADO FREE TOUCH
+                    <br>
+                    FÁCIL OPERACIÓN
+                    <br>
+                    BAJO COSTE DE MANTENIMIENTO
+                </p>
 
             </div>
-            <div class="item-carousel">
-                <a href="<?= base_url ?>producto/catalogue"> <img src="<?= base_url ?>assets/images/S/prec_s700_500.jpg" alt="">
-                    <h5 class="item-title mont">PRECEDENT S-700</h5> <br>
+            <div class="item-carousel text-center">
+                <a href="<?= base_url ?>producto/catalogue"> <img src="<?= base_url ?>assets/images/xpressSeries/XP5-DS.png" alt="">
+                    <h6 class="item-title mont">XP5 DS</h6> 
+                    <h6>PUENTE DE LAVADO</h6>
                 </a>
-                <p class="item-description">Diseñado para ser amigable con el medio ambiente Microprocesador ...
+                <p class="item-description">
+                    ESPACIO MÍNIMO DE 50M
+                    <br>
+                    GRAN RENTABILIDAD
+                    <br>
+                    BAJOS COSTES DE MANTENIMIENTO
                 </p>
             </div>
 
 
-            <div class="item-carousel">
-                <a href="<?= base_url ?>producto/catalogue"> <img src="<?= base_url ?>assets/images/T/T-1080 SPECTRUM MULTI-TEMP.jpg" alt="">
-                    <h5 class="item-title mont">T-1080 SPECTRUM MULTI-TEMP</h5>
+            <div class="item-carousel text-center">
+                <a href="<?= base_url ?>producto/catalogue"> <img src="<?= base_url ?>assets/images/matiksSeries/MK12.png" alt="">
+                    <h6 class="item-title mont">MK 12</h6>
+                    <h6>PUENTE DE LAVADO</h6>
                 </a>
-                <p class="item-description">Unidad de alto rendimiento Compresor reciprocarte X214 Control LED cabina de
-                    fácil ...</p>
+                <p class="item-description">
+                    ÓPTIMO COSTE DE INVERSIÓN
+                    <br>
+                    ALTA PRODUCTIVIDAD
+                    <br>
+                    BAJO COSTE DE MANTENIMIENTO
+                </p>
             </div>
 
-            <div class="item-carousel">
-                <a href="<?= base_url ?>producto/catalogue"> <img src="<?= base_url ?>assets/images/T/T-1080 SPECTRUM MULTI-TEMP.jpg" alt="">
-                    <h5 class="item-title mont">T-1080 SPECTRUM MULTI-TEMP</h5>
+            <div class="item-carousel text-center">
+                <a href="<?= base_url ?>producto/catalogue"> <img src="<?= base_url ?>assets/images/xpressSeries/XP5-DS.png" alt="">
+                    <h6 class="item-title mont">LAVA ALFOMBRILLAS</h6>
+                    <h6>PRODUCTOS Y ACCESORIOS</h6>
                 </a>
-                <p class="item-description">Unidad de alto rendimiento Compresor reciprocarte X214 Control LED cabina de
-                    fácil ...</p>
+                <p class="item-description">
+                    FACILIDAD DE USO
+                    <br>
+                    LAVADO EN SECO O CON AGUA
+                    <br>
+                    RESISTENTE Y AUTOMÁTICO
+                </p>
             </div>
 
         </div>
@@ -377,7 +402,7 @@
                 <p class="white mt-20 mb-50">Llamanos y recibe más información personalizada para iniciar tu propio
                     negocio de autolavado con la ayuda y calidad de GreenMatik.</p>
                 <a href="<?= base_url ?>index/contact"><button class="btn btn-border-white mont">Contáctanos</button></a>
-                <a href="#"><button class="btn btn-blanco ml-10 mont"><strong>Llámanos</strong></button></a>
+                <a href="tel:8127480049"><button class="btn btn-blanco ml-10 mont"><strong>Llámanos</strong></button></a>
 
             </div>
         </div>
