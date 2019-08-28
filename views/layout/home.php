@@ -102,7 +102,7 @@
         </div>
         <div class="row text-left services">
             <div class="col-xs-12 col-sm-6 col-lg-3  text-center">
-                <a href="" style="color:black">
+                <a href="<?=base_url?>producto/catalogue" style="color:black">
                     <img src="<?= base_url ?>assets/images/icons/01.png " alt="">
 
                     <h6 class=" servicios-margin mont"> <br> <strong>Equipo de Autolavado</strong></h6>
@@ -111,7 +111,7 @@
                 </a>
             </div>
             <div class="col-xs-12 col-sm-6 col-lg-3  text-center">
-                <a href="#" style="color:black">
+                <a href="http://greenmatik.mx/clientes/" target="_blank" style="color:black">
                     <img src="<?= base_url ?>assets/images/icons/02.png" alt="">
 
                     <h6 class=" servicios-margin mont"> <br> <strong>Inicia tu Negocio Ahora</strong> </h6>
@@ -119,7 +119,7 @@
                         inteligentemente en un autolavado y reducir costos?</p>
                 </a> </div>
             <div class="col-xs-12 col-sm-6 col-lg-3  text-center">
-                <a href="llave-mano.php" style="color:black">
+                <a href="<?=base_url?>index/llaveMano" style="color:black">
                     <img src="<?= base_url ?>assets/images/icons/03.png" alt="">
                     <h6 class=" servicios-margin mont"> <br> <strong>Tu Negocio Llave en Mano</strong></h6>
                     <p class="gray">
@@ -128,7 +128,7 @@
                     </p>
                 </a> </div>
             <div class="col-xs-12 col-sm-6  col-lg-3  text-center">
-                <a href="contacto.php" style="color:black">
+                <a href="<?=base_url?>index/contact" style="color:black">
                     <img src="<?= base_url ?>assets/images/icons/04.png" alt="">
                     <h6 class=" servicios-margin mont"> <br> <strong>Autolavado para flotillas</strong></h6>
                     <p class="gray">

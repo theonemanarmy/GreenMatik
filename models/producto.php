@@ -304,7 +304,7 @@ class Producto{
 
     public function getAll(){
         $sql = "SELECT p.*, c.nombre AS 'categoria' FROM productos p ".
-                "INNER JOIN categorias c ON p.categoria_id = c.id;";
+                "INNER JOIN categorias c ON p.categoria_id = c.id ORDER BY RAND();";
 
         $productos = $this->db->query($sql);
         return $productos;

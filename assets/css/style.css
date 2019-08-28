@@ -660,6 +660,7 @@ h5.app {
 .item-catalogo {
     /* padding: 0 5px; */
     margin: 15px 5px;
+    position: relative;
 }
 
 .text-item {
@@ -706,7 +707,34 @@ p.light {
 }
 
 .filtr-item{
+    position: relative;
     transition: all .4s;
+}
+
+.filtr-item::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    transition: all 0.5s;
+    top: 0;
+    left: 0;
+}
+
+.filtr-item:hover::before{
+    background: rgba(20, 148, 71, 0.20);
+    transform: scaleY(1.15);
+}
+
+.filtr-container:hover .filtr-item{
+    filter: blur(1px);
+    transform: scale(.7);
+}
+
+.filtr-container .filtr-item:hover{
+    filter: blur(0px);
+    transform: scale(1);
 }
 
 div.lista-productos {
