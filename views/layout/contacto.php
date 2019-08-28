@@ -1,4 +1,4 @@
-<section id="refacciones">
+<section id="contact-banner">
   <div class="container">
     <h1 class="titulo-refacciones">Contacto</h1>
 
@@ -7,7 +7,7 @@
     </p>
 
     <div>
-      <a href="#"><button class="btn btn-border-white mont">Ver ubicación</button></a>
+      <a href="<?=base_url?>index/contact#map"><button class="btn btn-border-white mont">Ver ubicación</button></a>
       <a href="tel:8127480049"><button class="btn btn-blanco ml-10 mont"><strong>Llámanos</strong></button></a>
     </div>
   </div>
@@ -136,7 +136,7 @@
 
 </section>
 
-<section class="map">
+<section class="map" id="map">
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.4025101966!2d-100.20132758553824!3d25.65794858368393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662c1b8cf080609%3A0xc84def865bbcb1af!2sPresa%20Manuel%20%C3%81vila%20Camacho%20105%2C%20S.C.O.P.%2C%20Guadalupe%2C%20N.L.!5e0!3m2!1ses!2smx!4v1566934642136!5m2!1ses!2smx" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 </section>
 

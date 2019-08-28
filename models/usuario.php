@@ -203,7 +203,7 @@ class usuario{
             $email = $this->email;
             $password = $this->password;
 
-            $sql = "SELECT * FROM USUARIOS WHERE email = '$email';";
+            $sql = "SELECT * FROM usuarios WHERE email = '$email';";
             $login = $this->db->query($sql);
 
             if($login && $login->num_rows == 1){

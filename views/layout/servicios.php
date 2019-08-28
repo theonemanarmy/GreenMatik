@@ -1,4 +1,4 @@
-<section id="refacciones">
+<section id="services-banner">
     <div class="container">
         <div class="col-xs-12 col-md-8">
             <h1 class="titulo-refacciones">Nuestros Servicios

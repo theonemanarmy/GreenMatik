@@ -672,12 +672,12 @@ h5.app {
     text-transform: uppercase;
 }
 
-.imagenProducto:hover + .text-item{
+/*.imagenProducto:hover + .text-item{
     background: #149447;
     -webkit-transition: all ease 0.8s;
     -moz-transition: all ease 0.8s;
     transition: all ease 0.8s;
-}
+}*/
 
 .catalogo-filtro {
     margin-bottom: 70px;
@@ -743,11 +743,45 @@ ul.lista-refacciones {
     transition: all ease 0.8s;
   
 }
+
+#services-banner{
+    z-index: 1;
+    background: url("../images/banners/banner_2.jpg") no-repeat ;
+    background-size: cover;
+    background-position-x: center;
+    padding: 100px 0 100px 0;
+}
+
+#catalogue-banner{
+    z-index: 1;
+    background: url("../images/banners/banner_3.jpg") no-repeat ;
+    background-size: cover;
+    background-position-x: center;
+    padding: 100px 0 100px 0;
+}
+
 #refacciones {
     z-index: 1;
-    background: url("../images/bg1.png") no-repeat ;
-      background-size: cover;
-      padding: 100px 0 100px 0;
+    background: url("../images/banners/banner_4.jpg") no-repeat ;
+    background-size: cover;
+    background-position-x: center;
+    padding: 100px 0 100px 0;
+}
+
+#us-banner{
+    z-index: 1;
+    background: url("../images/banners/banner_5.jpg") no-repeat ;
+    background-size: cover;
+    background-position-x: center;
+    padding: 100px 0 100px 0;
+}
+
+#contact-banner{
+    z-index: 1;
+    background: url("../images/banners/banner_6.jpg") no-repeat ;
+    background-size: cover;
+    background-position-x: center;
+    padding: 100px 0 100px 0;
 }
 
 .titulo-refacciones {

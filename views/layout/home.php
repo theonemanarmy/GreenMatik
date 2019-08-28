@@ -7,7 +7,7 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="<?= base_url ?>assets/images/bg1.png" alt="First slide">
+                <img class="d-block w-100" src="<?= base_url ?>assets/images/banners/banner_1.jpg" alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h1 class="titulo-carousel">Invierte en un Negocio Rentable</h1>
                     <p class="white">Conoce nuestra increíble línea de productos 100% <br> Mexicana diseñada para cuidar
@@ -22,7 +22,7 @@
             </div>
 
             <div class="carousel-item">
-                <img class="d-block w-100" src="<?= base_url ?>assets/images/bg1.png" alt="Second slide">
+                <img class="d-block w-100" src="<?= base_url ?>assets/images/banners/banner_1.jpg" alt="Second slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h1 class="titulo-carousel">Mejora tu equipo y ahorra costos</h1>
                     <p class="white">Conoce nuestra increíble línea de productos 100% <br> Mexicana diseñada para cuidar
@@ -36,7 +36,7 @@
             </div>
 
             <div class="carousel-item ">
-                <img class="d-block w-100" src="<?= base_url ?>assets/images/bg1.png" alt="First slide">
+                <img class="d-block w-100" src="<?= base_url ?>assets/images/banners/banner_1.jpg" alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h1 class="titulo-carousel">Autolavado Llave en mano</h1>
                     <p class="white">Conoce nuestra increíble línea de productos 100% <br> Mexicana diseñada para cuidar

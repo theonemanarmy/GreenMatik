@@ -25,18 +25,6 @@
     <link rel="stylesheet" href="<?= base_url ?>assets/css/bootstrap.css">
     <link rel="stylesheet" href="<?= base_url ?>assets/css/style.css">
 
-    <script type="text/javascript">
-        jQuery(document).ready(function($) {
-            var path = window.location.pathname.split("/").pop();
-
-            if (path == '') {
-                path = 'home.php';
-            }
-
-            var target = $('nav a[href="' + path + '"]');
-            target.addClass('activo');
-        });
-    </script>
 </head>
 
 <body>

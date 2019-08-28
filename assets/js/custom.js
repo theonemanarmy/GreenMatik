@@ -103,3 +103,14 @@ function validarNumeros(evt){
     return false;
   }
 }
+
+jQuery(document).ready(function($) {
+  var path = window.location;
+
+  if (path == '') {
+      path = 'http://localhost/GreenMatikCopia/index/home';
+  }
+
+  var target = $('nav a[href="' + path + '"]');
+  target.addClass('activo');
+});

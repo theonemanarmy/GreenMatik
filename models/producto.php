@@ -303,16 +303,16 @@ class Producto{
     }
 
     public function getAll(){
-        $sql = "SELECT p.*, c.nombre AS 'categoria' FROM PRODUCTOS p ".
-                "INNER JOIN CATEGORIAS c ON p.categoria_id = c.id;";
+        $sql = "SELECT p.*, c.nombre AS 'categoria' FROM productos p ".
+                "INNER JOIN categorias c ON p.categoria_id = c.id;";
 
         $productos = $this->db->query($sql);
         return $productos;
     }//
 
     public function getRand($limit){
-        $sql = "SELECT p.*, c.nombre AS 'categoria' FROM PRODUCTOS p ".
-                "INNER JOIN CATEGORIAS c ON p.categoria_id = c.id ORDER BY RAND() ".
+        $sql = "SELECT p.*, c.nombre AS 'categoria' FROM productos p ".
+                "INNER JOIN categorias c ON p.categoria_id = c.id ORDER BY RAND() ".
                 "LIMIT $limit";
 
         $productosr = $this->db->query($sql);
@@ -323,10 +323,10 @@ class Producto{
         $sql = "SELECT p.*, c.nombre AS 'categoria', s.nombre AS 'serie', s.descripcion AS 'serieDescripcion', ".
                 "s.ventajas AS 'serieVentajas', s.incluye1, s.incluye2, s.incluye3, ".
                 "s.incluye4, s.incluye5, s.incluye6, s.incluye7, s.incluye8, cr.* ".
-                "FROM PRODUCTOS p ".
-                "INNER JOIN CATEGORIAS c ON c.id = p.categoria_id ".
-                "INNER JOIN SERIES s ON s.id = p.serie_id ".
-                "INNER JOIN CARACTERISTICAS cr ON cr.id = p.caracteristicas_id ".
+                "FROM productos p ".
+                "INNER JOIN categorias c ON c.id = p.categoria_id ".
+                "INNER JOIN series s ON s.id = p.serie_id ".
+                "INNER JOIN caracteristicas cr ON cr.id = p.caracteristicas_id ".
                 "WHERE p.id = {$this->getId()} ".
                 "ORDER BY p.id;";
         $producto=$this->db->query($sql);
