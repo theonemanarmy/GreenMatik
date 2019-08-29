@@ -3,7 +3,6 @@
 class indexController{
 
     //funciones del index
-
     public function home(){
         require_once 'views/layout/home.php';
     }
@@ -48,5 +47,27 @@ class indexController{
     //Función términos y condiciones
     public function terminosYCondiciones(){
         require_once 'views/terminos/aviso-privacidad.php';
+    }
+
+    //función de formulario
+    public function formProcess(){
+        if(isset($_POST['enviar'])){
+            $nombre = htmlspecialchars($_POST['nombre']);
+            $telefono = htmlspecialchars($_POST['telefono']);
+            $email = htmlspecialchars($_POST['email']);
+            $estado = htmlspecialchars($_POST['estado']);
+            $ciudad = htmlspecialchars($_POST['ciudad']);
+            $mensaje = htmlspecialchars($_POST['mensaje']);
+            $terminos = htmlspecialchars($_POST['terminos']);
+
+            if($nombre && $telefono && $email && $estado && $ciudad && $mensaje && $terminos){
+                require_once 'views/formulario/thanks.php';
+            }else{
+                
+            }
+            
+        }else{
+            echo "error";
+        }
     }
 }//termina controller

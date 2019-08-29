@@ -31,7 +31,7 @@
 
                 <a class="footer footer-link"> <i class="fas fa-map-marker-alt dos"></i> <strong>UBICACIÓN</strong></a>
                 <br>
-                <a class="footer-link mt-20" href="#"> 
+                <a class="footer-link mt-20" href="https://www.google.com/maps/place/Greenmatik+S.A.+de+C.V./@25.6573297,-100.1985461,21z/data=!4m13!1m7!3m6!1s0x8662c1b8cf080609:0xc84def865bbcb1af!2sPresa+Manuel+%C3%81vila+Camacho+105,+S.C.O.P.,+Guadalupe,+N.L.!3b1!8m2!3d25.6579486!4d-100.1991389!3m4!1s0x8662c130d43003ab:0xc5ccd26d2e891e0a!8m2!3d25.6573297!4d-100.1984093" target="_blank"> 
                     <span class="sucursales-footer" style="font-size:11px;">
                         Presa Manuel Avila Camacho #105
                         <br>

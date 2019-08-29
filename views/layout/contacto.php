@@ -7,7 +7,7 @@
     </p>
 
     <div>
-      <a href="<?=base_url?>index/contact#map"><button class="btn btn-border-white mont">Ver ubicación</button></a>
+      <a href="https://www.google.com/maps/place/Greenmatik+S.A.+de+C.V./@25.6573297,-100.1985461,21z/data=!4m13!1m7!3m6!1s0x8662c1b8cf080609:0xc84def865bbcb1af!2sPresa+Manuel+%C3%81vila+Camacho+105,+S.C.O.P.,+Guadalupe,+N.L.!3b1!8m2!3d25.6579486!4d-100.1991389!3m4!1s0x8662c130d43003ab:0xc5ccd26d2e891e0a!8m2!3d25.6573297!4d-100.1984093"><button class="btn btn-border-white mont">Ver ubicación</button></a>
       <a href="tel:8127480049"><button class="btn btn-blanco ml-10 mont"><strong>Llámanos</strong></button></a>
     </div>
   </div>
@@ -28,71 +28,70 @@
     <div class="row">
       <div class="col-xs-12 col-md-6">
 
-        <form action="mail/enviar.php" id="contact-form" method="post" role="form">
+        <form action="<?=base_url?>index/formProcess" id="contact-form" method="post" role="form">
           <div class="ajax-hidden">
 
             <p class="black">Nombre</p>
             <div class="form-group">
-              <label class="sr-only" for="c_name">Nombre</label>
-              <input type="text" id="c_name" class="form-control" name="nombre" placeholder="Nombre" onkeypress="return validarLetras(event);">
-              <div id="mensaje1" class="errores">*Ingresa un nombre válido</div>
+              <label class="sr-only" for="nombre">Nombre</label>
+              <input type="text" id="nombre" pattern="[A-Za-z-áéíóú\s]+" onkeyup="this.className = 'campo';" class="form-control" name="nombre" placeholder="Nombre" maxlength="100" minlength="2" onkeypress="return validarLetras(event);">
             </div>
+            <div id="mensaje1" class="errores">*Ingresa un nombre válido</div>
 
             <p class="black">Teléfono</p>
             <div class="form-group">
-              <label class="sr-only" for="c_phone">Teléfono </label>
-              <input type="tel" id="c_phone" class="form-control" name="telefono" placeholder="Teléfono" onkeypress="return validarNumeros(event);">
-              <div id="mensaje2" class="errores">*Ingresa un télefono válido</div>
+              <label class="sr-only" for="telefono">Teléfono </label>
+              <input type="tel" id="telefono" class="form-control" name="telefono" pattern="^[0-9]+" onkeyup="this.className = 'campo';" placeholder="Teléfono" onkeypress="return validarNumeros(event);">
             </div>
+            <div id="mensaje2" class="errores">*Ingresa un télefono válido</div>
 
             <p class="black">E-mail</p>
             <div class="form-group">
-              <label class="sr-only" for="c_email">E-mail </label>
-              <input type="email" id="c_email" class="form-control" name="email" placeholder="E-mail">
-              <div id="mensaje3" class="errores">Ingresa un e-mail válido</div>
+              <label class="sr-only" for="email">E-mail </label>
+              <input type="email" id="email" class="form-control" name="email" onkeyup="this.className = 'campo';" placeholder="E-mail" pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$" maxlength="120">
             </div>
+            <div id="mensaje3" class="errores">Ingresa un e-mail válido</div>
 
             <p class="black">Estado</p>
             <div class="form-group">
-              <label class="sr-only" for="c_name">Estado</label>
-              <input type="text" id="c_estado" class="form-control" name="estado" placeholder="Estado" onkeypress="return validarLetras(event);">
-              <div id="mensaje4" class="errores">Ingresa tu estado</div>
+              <label class="sr-only" for="estado">Estado</label>
+              <input type="text" id="estado" class="form-control" name="estado" pattern="[A-Za-z-áéíóú\s]+" onkeyup="this.className = 'campo';" placeholder="Estado" maxlength="100" minlength="2" onkeypress="return validarLetras(event);">
             </div>
+            <div id="mensaje4" class="errores">Ingresa tu estado</div>
 
             <p class="black">Ciudad</p>
             <div class="form-group">
-              <label class="sr-only" for="c_name">Ciudad</label>
-              <input type="text" id="c_ciudad" class="form-control" name="ciudad" placeholder="Ciudad" onkeypress="return validarLetras(event);">
-              <div id="mensaje5" class="errores">Ingresa tu ciudad</div>
+              <label class="sr-only" for="ciudad">Ciudad</label>
+              <input type="text" id="ciudad" class="form-control" name="ciudad" pattern="[A-Za-z-áéíóú\s]+" onkeyup="this.className = 'campo';" placeholder="Ciudad" maxlength="100" minlength="2" onkeypress="return validarLetras(event);">
             </div>
+            <div id="mensaje5" class="errores">Ingresa tu ciudad</div>
 
             <p class="black">Mensaje</p>
             <div class="form-group">
-              <textarea class="form-control" id="c_message" name="mensaje" rows="7" placeholder="Mensaje"></textarea>
-              <div id="mensaje6" class="errores">Ingresa un mensaje válido</div>
+              <textarea class="form-control" id="mensaje" name="mensaje" rows="7" placeholder="Mensaje" maxlength="500" minlength="2"></textarea>
             </div>
+            <div id="mensaje6" class="errores">Ingresa un mensaje válido</div>
 
             <div class="form-check ">
-              <input class="form-check-input" name="terminos" type="checkbox" value="" id="c_terminos">
+              <input class="form-check-input" name="terminos" type="checkbox" value="" id="c_terminos" required>
               <label class="form-check-label" for="defaultCheck1">
                 <a class="aviso2" href="<?= base_url ?>index/terminosYCondiciones">
                   Acepto términos de
                   privacidad
                 </a>
               </label>
-              <div id="mensaje7" class="errores">Debes aceptar los términos y condiciones</div>
             </div>
-
 
             <input type="submit" id="btnEnviar" value="ENVIAR" name="enviar" class="btn btn-enviar">
 
           </div>
           <div class="ajax-response"></div>
+          <div id="mensaje7" class="errores" style="margin-top:auto;">*Debes aceptar los términos y condiciones</div>
         </form>
       </div>
 
 
-      <div class="col-xs-12 col-sm-6  col-lg-4 filtr-item" category="Monterrey"></div>
+      <div class="col-xs-12 col-sm-6  col-lg-4"></div>
     </div>
     <!--end row-->
 </section>
@@ -106,7 +105,7 @@
           <img class="mr-3" src="<?= base_url ?>assets/images/icons/ubicacion.png" alt="Generic placeholder image">
           <div class="media-body">
             <h6 class="mt-0">Ubicación </h6>
-            <p class="contacto-text"> Calle: Presa Manuel Avila Camacho #105 <br> Col. S. C. O. P, <br> Guadalupe, N.L. <br> C. P. 67190 </p>
+            <p class="contacto-text"> Presa Manuel Avila Camacho #105 <br> Col. S. C. O. P, Guadalupe, N.L. <br> C. P. 67190 </p>
 
           </div>
         </div>
@@ -115,8 +114,7 @@
         <div class="media">
           <img class="mr-3" src="<?= base_url ?>assets/images/icons/tel.png" alt="Generic placeholder image">
           <div class="media-body">
-            <h6 class="mt-0">Teléfono </h6> <a class="contacto-tel" href="tel:8183347766">(81) 8334
-              7766</a><br>
+            <h6 class="mt-0">Teléfono </h6> <a class="contacto-tel" href="tel:8127480049">81 2748 0049</a><br>
             <!-- <a class="contacto-tel"  href="tel:818394-5570">(81) 8394 5570</a> -->
           </div>
         </div>
@@ -137,7 +135,7 @@
 </section>
 
 <section class="map" id="map">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.4025101966!2d-100.20132758553824!3d25.65794858368393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662c1b8cf080609%3A0xc84def865bbcb1af!2sPresa%20Manuel%20%C3%81vila%20Camacho%20105%2C%20S.C.O.P.%2C%20Guadalupe%2C%20N.L.!5e0!3m2!1ses!2smx!4v1566934642136!5m2!1ses!2smx" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d224.77632316017608!2d-100.1985461!3d25.6573297!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662c130d43003ab%3A0xc5ccd26d2e891e0a!2sGreenmatik%20S.A.%20de%20C.V.!5e0!3m2!1ses!2smx!4v1567094722360!5m2!1ses!2smx" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 </section>
 
 <!--Validación de formulario con JQuery-->
@@ -146,12 +144,12 @@
   $(document).ready(function() {
 
     $("#btnEnviar").click(function() {
-      var nombre = $("#c_name").val();
-      var telefono = $("#c_phone").val();
-      var email = $("#c_email").val();
-      var estado = $("#c_estado").val();
-      var ciudad = $("#c_ciudad").val();
-      var mensaje = $("#c_message").val();
+      var nombre = $("#nombre").val();
+      var telefono = $("#telefono").val();
+      var email = $("#email").val();
+      var estado = $("#estado").val();
+      var ciudad = $("#ciudad").val();
+      var mensaje = $("#message").val();
       var terminos = $("input[type='checkbox']:checked");
 
       if (nombre == "") {
