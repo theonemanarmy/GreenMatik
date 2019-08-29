@@ -32,12 +32,10 @@
                 <a class="footer footer-link"> <i class="fas fa-map-marker-alt dos"></i> <strong>UBICACIÓN</strong></a>
                 <br>
                 <a class="footer-link mt-20" href="#"> 
-                    <span class="sucursales-footer">
-                        Calle: Presa Manuel Avila Camacho #105
+                    <span class="sucursales-footer" style="font-size:11px;">
+                        Presa Manuel Avila Camacho #105
                         <br>
-                        Col: S. C. O. P
-                        <br>
-                        Guadalupe, N. L.
+                        S. C. O. P Guadalupe, N. L.
                         <br>
                         C. P. 67190
                     </span> 

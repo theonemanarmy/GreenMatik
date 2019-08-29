@@ -89,76 +89,131 @@
 
                             <tbody>
 
-                                <tr>
-                                    <th scope="row"></th>
+                                <?=isset($prod->numeroCepillos) ? "<tr>
+                                    <th scope='row'></th>
                                     <td>Numero de cepillos</td>
-                                    <td><?= $prod->numeroCepillos ?></td>
-                                </tr>
-                                <tr>
+                                    <td> $prod->numeroCepillos </td>
+                                    </tr>" : ''; ?>
 
-                                    <th scope="row"></th>
+                                <?=isset($prod->areaDeMontaje) ? "<tr>
+                                    <th scope='row'></th>
                                     <td>Área de montaje</td>
-                                    <td><?= $prod->areaDeMontaje ?></td>
-                                </tr>
+                                    <td> $prod->areaDeMontaje </td>
+                                </tr>" : ''; ?>
 
-                                <tr>
-                                    <th scope="row"></th>
+                                <?=isset($prod->unidadesPorHora) ? "<tr>
+                                    <th scope='row'></th>
                                     <td>Unidades por hora</td>
-                                    <td><?= $prod->unidadesPorHora ?></td>
-                                </tr>
+                                    <td> $prod->unidadesPorHora </td>
+                                </tr>" : ''; ?>
 
-                                <tr>
-                                    <th scope="row"></th>
+                                <?=isset($prod->potencialTotal) ? "<tr>
+                                    <th scope='row'></th>
                                     <td>Potencial Total</td>
-                                    <td><?= $prod->potencialTotal ?></td>
-                                </tr>
+                                    <td> $prod->potencialTotal </td>
+                                </tr>" : ''; ?>
 
-                                <tr>
-                                    <th scope="row"></th>
+                                <?=isset($prod->longitudCarril) ? "<tr>
+                                    <th scope='row'></th>
                                     <td>Longitud Carril</td>
-                                    <td><?= $prod->longitudCarril ?></td>
-                                </tr>
+                                    <td>$prod->longitudCarril </td>
+                                </tr>" : ''; ?>
 
-                                <tr>
-                                    <th scope="row"></th>
+                                <?=isset($prod->dimensionesEquipo) ? "<tr>
+                                    <th scope='row'></th>
                                     <td>Dimensiones Equipo</td>
-                                    <td><?= $prod->dimensionesEquipo ?></td>
-                                </tr>
+                                    <td> $prod->dimensionesEquipo</td>
+                                </tr>" : ''; ?>
 
-                                <tr>
-                                    <th scope="row"></th>
+                                <?=isset($prod->medidaVehiculo) ? "<tr>
+                                    <th scope='row'></th>
                                     <td>Medida Vehiculo</td>
-                                    <td><?= $prod->medidaVehiculo ?></td>
-                                </tr>
+                                    <td> $prod->medidaVehiculo</td>
+                                </tr>" : ''; ?>
 
-                                <tr>
-                                    <th scope="row"></th>
+                                <?=isset($prod->consumoVehiculo) ? "<tr>
+                                    <th scope='row'></th>
                                     <td>Consumo Vehículo</td>
-                                    <td><?= $prod->consumoVehiculo ?></td>
-                                </tr>
+                                    <td>$prod->consumoVehiculo </td>
+                                </tr>" : ''; ?>
 
-                                <tr>
-                                    <th scope="row"></th>
+                                <?=isset($prod->fabricacion) ? "<tr>
+                                    <th scope='row'></th>
                                     <td>Fabricación</td>
-                                    <td><?= $prod->fabricacion ?></td>
-                                </tr>
+                                    <td>$prod->fabricacion</td>
+                                </tr>" : ''; ?>
 
-                                <tr>
-                                    <th scope="row"></th>
+                                <?=isset($prod->personalizacion) ? "<tr>
+                                    <th scope='row'></th>
                                     <td>Personalización</td>
-                                    <td><?= $prod->personalizacion ?></td>
-                                </tr>
+                                    <td>$prod->personalizacion</td>
+                                </tr>" : ''; ?>
 
-                                <tr>
-                                    <th scope="row"></th>
+                                <?=isset($prod->garantia) ? "<tr>
+                                    <th scope='row'></th>
                                     <td>Garantía</td>
-                                    <td><?= $prod->garantia ?></td>
-                                </tr>
+                                    <td> $prod->garantia </td>
+                                </tr>" : ''; ?>
 
 
                             </tbody>
                         </table>
 
+                        <!--tablas de Free touch-->
+                        <table class="table services">
+                            <thead class="thead-light">
+                                <tr class="align-items-center">
+                                    <th scope="col" colspan="3" class="text-center">LAVADO</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <th scope="row"></th>
+                                    <td>
+                                        Brazo Giratorio de Alta presión
+                                        a 284.46 PSI
+                                    </td>
+                                    <td><?= $prod->brazoGir ?></td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row"></th>
+                                    <td>Bomba de agua alta presión 2.2 kw</td>
+                                    <td><?= $prod->bombaAgua ?></td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row"></th>
+                                    <td>Compresor de aire de 2.2kw</td>
+                                    <td><?= $prod->compresorAire ?></td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row"></th>
+                                    <td>Dispensador de espuma y cortina burbuja</td>
+                                    <td><?= $prod->dispensadorEspuma ?></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="table services">
+                            <thead class="thead-light">
+                                <tr class="align-items-center">
+                                    <th scope="col" colspan="3" class="text-center">SECADO</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <th scope="row"></th>
+                                    <td>Turbinas fixed type de 5.5kw = 7hp</td>
+                                    <td><?= $prod->turbinas ?></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!--tablas de Free touch-->
                     </div>
                 </div>
 

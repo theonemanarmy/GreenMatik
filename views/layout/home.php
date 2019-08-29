@@ -93,7 +93,7 @@
             <div class="col-xs-12 col-md-2"></div>
             <div class="col-xs-12 col-md-8">
                 <p class=" text-center">
-                    Bienvenidos a nuestra familia GreenMatik, donde encontraras las mejores soluciones para tu negocio,
+                    Bienvenidos a nuestra familia GreenMatik, donde encontrarás las mejores soluciones para tu negocio,
                     con nuestro equipo y personal de alta calidad, nosotros te llevamos de la mano en tu modelo de
                     negocio.
                 </p>
@@ -106,7 +106,7 @@
                     <img src="<?= base_url ?>assets/images/icons/01.png " alt="">
 
                     <h6 class=" servicios-margin mont"> <br> <strong>Equipo de Autolavado</strong></h6>
-                    <p class="gray">¿Buscas comprar o remplazar por un mejor equipo de lavado de acuerdo a tus
+                    <p class="gray">¿Buscas comprar o reemplazar por un mejor equipo de lavado de acuerdo a tus
                         necesidades?.</p>
                 </a>
             </div>
@@ -191,7 +191,7 @@
                         </div>
                     </div>
                     <p class="gray mt-20">Ponemos a tu servicio nuestros recursos técnicos y humanos, para darte
-                        soluciones rápidas y efectivas.. </p>
+                        soluciones rápidas y efectivas. </p>
                 </a> </div>
 
             <div class="col-xs-12 col-sm-6 col-lg-6  left mt-20">
@@ -228,7 +228,7 @@
                 <h5><strong>El agua es un elemento imprescindible para la limpieza, pero ¡Hay que hacer un uso
                         responsable de ella!</strong> </h5>
                 <h6><strong>Ahorra hasta 90% de Agua</strong></h6>
-                <p>Incorpora a tu kit de lavado nuestro sistema de reciclado de agua, que hara que reutilices hasta el
+                <p>Incorpora a tu kit de lavado nuestro sistema de reciclado de agua, que hará que reutilices hasta el
                     90% del agua empleada en los procesos de lavado.</p>
                 <h6><strong>Combinación perfecta para ahorro de agua consumida por auto</strong></h6>
                 <p>Mediante la combinación de un reciclador físico, biológico o mixto, eficientes rejillas de
@@ -399,7 +399,7 @@
             </div>
             <div class="col-xs-12 col-md-5">
                 <h2 class="callto-title"> <span class="white"> ¿Deseas más información? </span> </h2>
-                <p class="white mt-20 mb-50">Llamanos y recibe más información personalizada para iniciar tu propio
+                <p class="white mt-20 mb-50">Llámanos y recibe más información personalizada para iniciar tu propio
                     negocio de autolavado con la ayuda y calidad de GreenMatik.</p>
                 <a href="<?= base_url ?>index/contact"><button class="btn btn-border-white mont">Contáctanos</button></a>
                 <a href="tel:8127480049"><button class="btn btn-blanco ml-10 mont"><strong>Llámanos</strong></button></a>
