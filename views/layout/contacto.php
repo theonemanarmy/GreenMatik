@@ -31,11 +31,14 @@
         <form action="<?=base_url?>index/formProcess" id="contact-form" method="post" role="form">
           <div class="ajax-hidden">
 
+          <?php echo isset($_SESSION['errores_general']) ? Utils::mostrarErrores($_SESSION['errores_general'], 'general') : '';  ?>
+
             <p class="black">Nombre</p>
             <div class="form-group">
               <label class="sr-only" for="nombre">Nombre</label>
               <input type="text" id="nombre" pattern="[A-Za-z-áéíóú\s]+" onkeyup="this.className = 'campo';" class="form-control" name="nombre" placeholder="Nombre" maxlength="100" minlength="2" onkeypress="return validarLetras(event);">
             </div>
+            <?php echo isset($_SESSION['errores_general']) ? Utils::mostrarErrores($_SESSION['errores_general'], 'nombre') : '';  ?>
             <div id="mensaje1" class="errores">*Ingresa un nombre válido</div>
 
             <p class="black">Teléfono</p>
@@ -43,13 +46,15 @@
               <label class="sr-only" for="telefono">Teléfono </label>
               <input type="tel" id="telefono" class="form-control" name="telefono" pattern="^[0-9]+" onkeyup="this.className = 'campo';" placeholder="Teléfono" onkeypress="return validarNumeros(event);">
             </div>
-            <div id="mensaje2" class="errores">*Ingresa un télefono válido</div>
+            <?php echo isset($_SESSION['errores_general']) ? Utils::mostrarErrores($_SESSION['errores_general'], 'telefono') : '';  ?>
+            <div id="mensaje2" class="errores">*Ingresa un teléfono válido</div>
 
             <p class="black">E-mail</p>
             <div class="form-group">
               <label class="sr-only" for="email">E-mail </label>
               <input type="email" id="email" class="form-control" name="email" onkeyup="this.className = 'campo';" placeholder="E-mail" pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$" maxlength="120">
             </div>
+            <?php echo isset($_SESSION['errores_general']) ? Utils::mostrarErrores($_SESSION['errores_general'], 'email') : '';  ?>
             <div id="mensaje3" class="errores">Ingresa un e-mail válido</div>
 
             <p class="black">Estado</p>
@@ -57,6 +62,7 @@
               <label class="sr-only" for="estado">Estado</label>
               <input type="text" id="estado" class="form-control" name="estado" pattern="[A-Za-z-áéíóú\s]+" onkeyup="this.className = 'campo';" placeholder="Estado" maxlength="100" minlength="2" onkeypress="return validarLetras(event);">
             </div>
+            <?php echo isset($_SESSION['errores_general']) ? Utils::mostrarErrores($_SESSION['errores_general'], 'estado') : '';  ?>
             <div id="mensaje4" class="errores">Ingresa tu estado</div>
 
             <p class="black">Ciudad</p>
@@ -64,16 +70,18 @@
               <label class="sr-only" for="ciudad">Ciudad</label>
               <input type="text" id="ciudad" class="form-control" name="ciudad" pattern="[A-Za-z-áéíóú\s]+" onkeyup="this.className = 'campo';" placeholder="Ciudad" maxlength="100" minlength="2" onkeypress="return validarLetras(event);">
             </div>
+            <?php echo isset($_SESSION['errores_general']) ? Utils::mostrarErrores($_SESSION['errores_general'], 'ciudad') : '';  ?>
             <div id="mensaje5" class="errores">Ingresa tu ciudad</div>
 
             <p class="black">Mensaje</p>
             <div class="form-group">
               <textarea class="form-control" id="mensaje" name="mensaje" rows="7" placeholder="Mensaje" maxlength="500" minlength="2"></textarea>
             </div>
+            <?php echo isset($_SESSION['errores_general']) ? Utils::mostrarErrores($_SESSION['errores_general'], 'mensaje') : '';  ?>
             <div id="mensaje6" class="errores">Ingresa un mensaje válido</div>
 
             <div class="form-check ">
-              <input class="form-check-input" name="terminos" type="checkbox" value="" id="c_terminos" required>
+              <input class="form-check-input" name="terminos" type="checkbox" value="" id="c_terminos" >
               <label class="form-check-label" for="defaultCheck1">
                 <a class="aviso2" href="<?= base_url ?>index/terminosYCondiciones">
                   Acepto términos de
@@ -81,15 +89,16 @@
                 </a>
               </label>
             </div>
+            <?php echo isset($_SESSION['errores_general']) ? Utils::mostrarErrores($_SESSION['errores_general'], 'terminos') : '';  ?>
 
             <input type="submit" id="btnEnviar" value="ENVIAR" name="enviar" class="btn btn-enviar">
-
+            <?php Utils::deleteSession('errores_general'); ?>
           </div>
           <div class="ajax-response"></div>
           <div id="mensaje7" class="errores" style="margin-top:auto;">*Debes aceptar los términos y condiciones</div>
         </form>
       </div>
-
+      
 
       <div class="col-xs-12 col-sm-6  col-lg-4"></div>
     </div>
