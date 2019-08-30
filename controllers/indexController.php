@@ -49,6 +49,11 @@ class indexController{
         require_once 'views/terminos/aviso-privacidad.php';
     }
 
+    //función de gracias
+    public function thanks(){
+        require_once 'views/formulario/thanks.php';
+    }
+
     //función de formulario
     public function formProcess(){
         if(isset($_POST['enviar'])){
@@ -125,14 +130,72 @@ class indexController{
 
             //contar los errores del array
             if(count($errores) == 0){
-                echo "ok";
+                //asunto del correo
+                $asunto= "Mensaje de la Página web";
+
+                //destino del correo
+                $destinatario = "juan_27angel@hotmail.com";
+
+                //cabeceras para validar el formato html
+                $headers = "MIME-Version: 1.0" . "\r\n";
+                $headers.= "Content-type: text/html; charset=UTF-8\r\n";
+
+                //contenido del mensaje
+                $contenido='
+                <!DOCTYPE html>
+                <html lang="es">
+                <head></head>
+                <body>
+                    <h2>' . $nombre . ' ha enviado el siguiente mensaje a través de tu sitio web:</h2>
+                    <hr>
+                
+                    <p>' . $mensaje . '</p>
+        
+                    <hr>
+        
+                    <h5>Información del formulario</h5>
+        
+                    <ul>
+                        <li>Estado: '.$estado.'</li>
+                        <li>Ciudad: '.$ciudad.'</li>
+                    </ul>
+        
+                    <p>Contacta a  <strong>' . $nombre . '</strong> al correo:  <span style="color:blue;"> ' . $email . '</span> o al teléfono '. $telefono .' </p>
+                    
+                    <p>Ir a mi sitio web <span style="color:blue">http://greenmatik.mx</span></p>
+                </body>
+                </html>
+                ';
+
+                $envio = mail($destinatario, $asunto, $contenido, $headers);
+
+                if($envio){
+                    header("Location:".base_url.'index/thanks');
+
+                    //Enviando autorespuesta
+                    $pwf_header = "ventas@greenmatik.mx\n"
+                    ."Reply-to: ventas@greenmatik.mx \n";
+                    $pwf_asunto = "GreenMatik Confirmación";
+                    $pwf_dirigido_a = "$email";
+                    $pwf_mensaje = "$nombre Gracias por dejarnos su mensaje desde nuestro sitio web http://greenmatik.mx\n"
+                    ."Su mensaje ha sido recibido satisfactoriamente \n"
+                    ."Nos pondremos en contacto lo antes posible a su e-mail: $email o su telefono $telefono \n"
+                    ."\n"
+                    ."\n"
+                    ."-----------------------------------------------------------------"
+                    ."Favor de NO responder este e-mail ya que es generado Automaticamente.\n"
+                    ."Atte: Greenmatik \n";
+                    @mail($pwf_dirigido_a, $pwf_asunto, $pwf_mensaje, $pwf_header);
+                }else{
+                    $_SESSION['error_envio'] = "failed";
+                }
+
             }else{
                 $_SESSION['errores_general'] = $errores;
+                header('Location:'.base_url.'index/contact#contact-form');
             }
-
-            header('Location:'.base_url.'index/contact#contact-form');
         }else{
-            echo "error";
+            $_SESSION['errores_general'] = $errores;
         }
     }
 }//termina controller

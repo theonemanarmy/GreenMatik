@@ -30,13 +30,20 @@
 
         <form action="<?=base_url?>index/formProcess" id="contact-form" method="post" role="form">
           <div class="ajax-hidden">
+          <?php if(isset($_SESSION['error_envio']) && $_SESSION['error_envio'] == "failed"):  ?>
+            <div class='alert alert-danger alert-dismissible fade show' role='alert'>
+              <strong>Error </strong> Falló al enviarse, Porfavor espere un momento. <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                  <span aria-hidden='true'>&times;</span>
+              </button>
+            </div>
+          <?php endif; ?>
 
-          <?php echo isset($_SESSION['errores_general']) ? Utils::mostrarErrores($_SESSION['errores_general'], 'general') : '';  ?>
+          <?= isset($_SESSION['errores_general']) ? Utils::mostrarErrores($_SESSION['errores_general'], 'general') : '';  ?>
 
             <p class="black">Nombre</p>
             <div class="form-group">
               <label class="sr-only" for="nombre">Nombre</label>
-              <input type="text" id="nombre" pattern="[A-Za-z-áéíóú\s]+" onkeyup="this.className = 'campo';" class="form-control" name="nombre" placeholder="Nombre" maxlength="100" minlength="2" onkeypress="return validarLetras(event);">
+              <input type="text" id="nombre" pattern="[A-Za-z-áéíóú\s]+" value="<?php if(isset($nombre)) echo $nombre; ?>" onkeyup="this.className = 'campo';" class="form-control" name="nombre" placeholder="Nombre" maxlength="100" minlength="2" onkeypress="return validarLetras(event);">
             </div>
             <?php echo isset($_SESSION['errores_general']) ? Utils::mostrarErrores($_SESSION['errores_general'], 'nombre') : '';  ?>
             <div id="mensaje1" class="errores">*Ingresa un nombre válido</div>
@@ -93,6 +100,7 @@
 
             <input type="submit" id="btnEnviar" value="ENVIAR" name="enviar" class="btn btn-enviar">
             <?php Utils::deleteSession('errores_general'); ?>
+            <?php Utils::deleteSession('error_envio'); ?>
           </div>
           <div class="ajax-response"></div>
           <div id="mensaje7" class="errores" style="margin-top:auto;">*Debes aceptar los términos y condiciones</div>
