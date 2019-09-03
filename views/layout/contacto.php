@@ -8,7 +8,7 @@
 
     <div>
       <a href="https://www.google.com/maps/place/Greenmatik+S.A.+de+C.V./@25.6573297,-100.1985461,21z/data=!4m13!1m7!3m6!1s0x8662c1b8cf080609:0xc84def865bbcb1af!2sPresa+Manuel+%C3%81vila+Camacho+105,+S.C.O.P.,+Guadalupe,+N.L.!3b1!8m2!3d25.6579486!4d-100.1991389!3m4!1s0x8662c130d43003ab:0xc5ccd26d2e891e0a!8m2!3d25.6573297!4d-100.1984093"><button class="btn btn-border-white mont">Ver ubicación</button></a>
-      <a href="tel:8127480049"><button class="btn btn-blanco ml-10 mont"><strong>Llámanos</strong></button></a>
+      <a href="tel:8110867509"><button class="btn btn-blanco ml-10 mont"><strong>Llámanos</strong></button></a>
     </div>
   </div>
 </section>
@@ -131,7 +131,7 @@
         <div class="media">
           <img class="mr-3" src="<?= base_url ?>assets/images/icons/tel.png" alt="Generic placeholder image">
           <div class="media-body">
-            <h6 class="mt-0">Teléfono </h6> <a class="contacto-tel" href="tel:8127480049">81 2748 0049</a><br>
+            <h6 class="mt-0">Teléfono </h6> <a class="contacto-tel" href="tel:8110867509">811 086 7509</a><br>
             <!-- <a class="contacto-tel"  href="tel:818394-5570">(81) 8394 5570</a> -->
           </div>
         </div>

@@ -41,7 +41,7 @@
             <span class="nav-link header-oculto"> <i class="far fa-clock"></i> <span class="header-oculto"><strong>SERVICIO 24 HORAS</strong></span></span>
         </li> -->
             <li class="nav-item">
-                <a class="nav-link header-oculto" href="tel:8127480049"><i class="fas fa-phone"></i> <span class="header-oculto">81 2748 0049</span> </a>
+                <a class="nav-link header-oculto" href="tel:8110867509"><i class="fas fa-phone"></i> <span class="header-oculto">811 086 7509</span> </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link header-oculto" href="mailto:ventas@greenmatik.mx">

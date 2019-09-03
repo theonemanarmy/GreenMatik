@@ -6,7 +6,7 @@
 
                 <p class="white mt-10 mb-50">Con tu proyecto Llave en Mano lo único que necesitas son tus metas y tu inversión, nosotros nos encargamos del resto. </p>
                 <div>
-                    <a href="tel:8127480049"><button class="btn btn-border-white mont">Llámanos</button></a>
+                    <a href="tel:8110867509"><button class="btn btn-border-white mont">Llámanos</button></a>
                     <a href="<?= base_url ?>producto/catalogue"><button class="btn btn-blanco ml-10 mont"><strong>Ver Catálogo</strong></button></a>
                 </div>
             </div>
@@ -105,7 +105,7 @@
                     <h2 class="callto-title"> <span class="white"> Con GreenMatik estas a un paso de ser dueño de un autolavado rentable.</span> </h2>
                     <p class="white mt-20 mb-50">
                         Contáctanos a través de nuestros teléfonos o correo electrónico y comienza la planeación de tu propio autolavado.</p>
-                    <a href="tel:8127480049"><button class="btn btn-border-white mont"><strong>Llámanos</strong></button></a>
+                    <a href="tel:8110867509"><button class="btn btn-border-white mont"><strong>Llámanos</strong></button></a>
                     <a href="<?=base_url?>index/contact"><button class="btn btn-blanco ml-10 mont"><strong>Contáctanos</strong></button></a>
 
                 </div>

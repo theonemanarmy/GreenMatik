@@ -10,7 +10,7 @@
                 de México y Latinoamérica.
             </p>
             <div>
-                <a href="tel:8127480049"><button class="btn btn-border-white mont">Llámanos</button></a>
+                <a href="tel:8110867509"><button class="btn btn-border-white mont">Llámanos</button></a>
                 <a href="<?= base_url ?>producto/catalogue"><button class="btn btn-blanco ml-10 mont"><strong>Ver Catálogo</strong></button></a>
             </div>
         </div>
@@ -84,7 +84,7 @@
                     Por teléfono, mail y asistencia virtual. <br> <br>
 
                     Estamos conectados a tu negocio las 24 horas de los 365 días del año, para brindarte la asistencia técnica que merece tu sueño empresarial.</p>
-                <a href="tel:8127480049"><button class="btn btn-border-white mont"><strong>Llámanos</strong></button></a>
+                <a href="tel:8110867509"><button class="btn btn-border-white mont"><strong>Llámanos</strong></button></a>
                 <a href="<?= base_url ?>index/contact"><button class="btn btn-blanco ml-10 mont"><strong>Contáctanos</strong></button></a>
 
             </div>

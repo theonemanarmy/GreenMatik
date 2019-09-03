@@ -7,7 +7,7 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="<?= base_url ?>assets/images/banners/banner_1.jpg" alt="First slide">
+                <img class="d-block w-100" src="<?= base_url ?>assets/images/banners/slider-1.png" alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h1 class="titulo-carousel">Invierte en un Negocio Rentable</h1>
                     <p class="white">Conoce nuestra increíble línea de productos 100% <br> Mexicana diseñada para cuidar
@@ -15,14 +15,14 @@
                     </p>
 
                     <div>
-                        <a href="tel:8127480049"><button class="btn btn-border-white mont">Llámanos</button></a>
+                        <a href="tel:8110867509"><button class="btn btn-border-white mont">Llámanos</button></a>
                         <a href="<?= base_url ?>index/contact"><button class="btn btn-blanco ml-10 mont"><strong>Contáctanos</strong></button></a>
                     </div>
                 </div>
             </div>
 
             <div class="carousel-item">
-                <img class="d-block w-100" src="<?= base_url ?>assets/images/banners/banner_1.jpg" alt="Second slide">
+                <img class="d-block w-100" src="<?= base_url ?>assets/images/banners/slider-2.png" alt="Second slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h1 class="titulo-carousel">Mejora tu equipo y ahorra costos</h1>
                     <p class="white">Conoce nuestra increíble línea de productos 100% <br> Mexicana diseñada para cuidar
@@ -36,14 +36,14 @@
             </div>
 
             <div class="carousel-item ">
-                <img class="d-block w-100" src="<?= base_url ?>assets/images/banners/banner_1.jpg" alt="First slide">
+                <img class="d-block w-100" src="<?= base_url ?>assets/images/banners/slider-3.png" alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h1 class="titulo-carousel">Autolavado Llave en mano</h1>
                     <p class="white">Conoce nuestra increíble línea de productos 100% <br> Mexicana diseñada para cuidar
                         el medio ambiente y cuidar tu bolsillo.
                     </p>
                     <div>
-                        <a href="tel:8127480049"><button class="btn btn-border-white mont">Llámanos</button></a>
+                        <a href="tel:8110867509"><button class="btn btn-border-white mont">Llámanos</button></a>
                         <a href="<?= base_url ?>index/contact"><button class="btn btn-blanco ml-10 mont"><strong>Contáctanos</strong></button></a>
                     </div>
                 </div>
@@ -72,7 +72,7 @@
         </h3>
         <br>
 
-        <a href="tel:8127480049">
+        <a href="tel:8110867509">
             <button class="btn btn-border-white mont">
                 Llámanos
             </button>
@@ -402,7 +402,7 @@
                 <p class="white mt-20 mb-50">Llámanos y recibe más información personalizada para iniciar tu propio
                     negocio de autolavado con la ayuda y calidad de GreenMatik.</p>
                 <a href="<?= base_url ?>index/contact"><button class="btn btn-border-white mont">Contáctanos</button></a>
-                <a href="tel:8127480049"><button class="btn btn-blanco ml-10 mont"><strong>Llámanos</strong></button></a>
+                <a href="tel:8110867509"><button class="btn btn-blanco ml-10 mont"><strong>Llámanos</strong></button></a>
 
             </div>
         </div>

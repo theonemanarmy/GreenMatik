@@ -25,7 +25,7 @@
             <div class="col-6 col-sm-6 col-lg-3">
                 <h6><strong>CONTÁCTANOS</strong></h6>
                 <a class="footer-link"> <i class="fas fa-phone dos"></i> <span style="font-family: 'Raleway', sans-serif;"><strong>TELÉFONOS</strong> </span> </a> <br>
-                <a class="mostrar margen-movil" href="tel:8127480049"><span class="sucursales-footer">81 2748 0049</span> </a> <br>
+                <a class="mostrar margen-movil" href="tel:8110867509"><span class="sucursales-footer">811 086 7509</span> </a> <br>
                 <a class="footer-link"> <i class="fas fa-envelope dos"></i> <span style="font-family: 'Raleway', sans-serif;"><strong>E-MAIL</strong> </span> </a> <br>
                 <a class=" footer-link" href="mailto:ventas@greenmatik.mx"> <span class="sucursales-footer">ventas@greenmatik.mx</span> </a> <br>
 
@@ -43,7 +43,7 @@
                 <br>
 
 
-                <a class="oculto link" href="tel:8127480049">
+                <a class="oculto link" href="tel:8110867509">
                     <i class="fas fa-phone dos"></i> </a>
                 <br>
 

@@ -723,18 +723,15 @@ p.light {
 }
 
 .filtr-item:hover::before{
-    background: rgba(20, 148, 71, 0.20);
     transform: scaleY(1.15);
 }
 
-.filtr-container:hover .filtr-item{
-    filter: blur(1px);
-    transform: scale(.7);
+.filtr-container .filtr-item:hover{
+    transform: scale(.5);
 }
 
 .filtr-container .filtr-item:hover{
-    filter: blur(0px);
-    transform: scale(1);
+    transform: scale(1.2);
 }
 
 div.lista-productos {
@@ -774,41 +771,46 @@ ul.lista-refacciones {
 
 #services-banner{
     z-index: 1;
-    background: url("../images/banners/banner_2.jpg") no-repeat ;
+    background: url("../images/banners/secciones-1.png") no-repeat ;
     background-size: cover;
     background-position-x: center;
+    background-position-y: bottom;
     padding: 100px 0 100px 0;
 }
 
 #catalogue-banner{
     z-index: 1;
-    background: url("../images/banners/banner_3.jpg") no-repeat ;
+    background: url("../images/banners/secciones-2.png") no-repeat ;
     background-size: cover;
     background-position-x: center;
+    background-position-y: bottom;
     padding: 100px 0 100px 0;
 }
 
 #refacciones {
     z-index: 1;
-    background: url("../images/banners/banner_4.jpg") no-repeat ;
+    background: url("../images/banners/secciones-3.png") no-repeat ;
     background-size: cover;
     background-position-x: center;
+    background-position-y: bottom;
     padding: 100px 0 100px 0;
 }
 
 #us-banner{
     z-index: 1;
-    background: url("../images/banners/banner_5.jpg") no-repeat ;
+    background: url("../images/banners/secciones-4.png") no-repeat ;
     background-size: cover;
     background-position-x: center;
+    background-position-y: bottom;
     padding: 100px 0 100px 0;
 }
 
 #contact-banner{
     z-index: 1;
-    background: url("../images/banners/banner_6.jpg") no-repeat ;
+    background: url("../images/banners/secciones-5.png") no-repeat ;
     background-size: cover;
     background-position-x: center;
+    background-position-y: bottom;
     padding: 100px 0 100px 0;
 }
 
@@ -1272,9 +1274,56 @@ h1.app {
     #inter-movil {
         display: flex;
         padding: 153px 0 137px 0;
-        z-index: auto !important;
-        background: rgba(34, 34, 34, .5) !important;
+        z-index: 1;
+        background: url("../images/banners/banner-movil.png") no-repeat;
         background-size: cover;
+        background-position-x: center;
+        background-position-y: bottom;
+    }
+
+    #refacciones {
+        z-index: 1;
+        background: url("../images/banners/banner-movil.png") no-repeat;
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: bottom;
+        padding: 100px 0 100px 0;
+    }
+
+    #services-banner{
+        z-index: 1;
+        background: url("../images/banners/banner-movil.png") no-repeat;
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: bottom;
+        padding: 100px 0 100px 0;
+    }
+    
+    #catalogue-banner{
+        z-index: 1;
+        background: url("../images/banners/banner-movil.png") no-repeat ;
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: bottom;
+        padding: 100px 0 100px 0;
+    }
+
+    #us-banner{
+        z-index: 1;
+        background: url("../images/banners/banner-movil.png") no-repeat ;
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: bottom;
+        padding: 100px 0 100px 0;
+    }
+    
+    #contact-banner{
+        z-index: 1;
+        background: url("../images/banners/banner-movil.png") no-repeat ;
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: bottom;
+        padding: 100px 0 100px 0;
     }
 
     .nav-oculto-movil {
@@ -1288,14 +1337,17 @@ h1.app {
    
     .brand-app {
        padding-bottom: 70px;
-   }
-   header #btn-menu:checked ~ .menu-responsive {
-    margin: 0px -0;
-    padding: 171px 0;
-}
-   .img-app {
-    position: inherit;
     }
+
+    header #btn-menu:checked ~ .menu-responsive {
+        margin: 0px -0;
+        padding: 171px 0;
+    }
+
+   .img-app {
+        position: inherit;
+    }
+
     a.nav-link {
         color: black;
         font-weight: 700;
@@ -1378,7 +1430,6 @@ h1.app {
 
 @media screen and (max-width:480px){
   
-    
     .categoryItem {
         
         width: 100%;
@@ -1412,12 +1463,7 @@ h1.app {
     }
 }
 @media screen and (max-width:450px){  
-    #refacciones {
-        z-index: 1;
-        background: linear-gradient( rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.5) ), url(../images/Trailer_Precedent_5Row.jpg) no-repeat;
-        background-size: cover;
-        padding: 90px  0;
-    }
+    
     a.nav-link {
         color: black;
         font-weight: 700;

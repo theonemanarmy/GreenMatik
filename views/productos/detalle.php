@@ -6,7 +6,7 @@
                     <div class="row align-center">
 
                     </div>
-                    <img src="data:image/jpg;base64, <?php echo base64_encode($prod->imagen); ?>" class=" img-product-ocultar" alt="">
+                    <img src="data:image/jpg;base64, <?= base64_encode($prod->imagenDetalle); ?>" class=" img-product-ocultar" alt="">
                     <h6 class="bule2" style="color: #149447; font-weight:700;"><?= $prod->serie ?></h6>
                     <h3 class="blue"><strong><?= $prod->categoria ?> <?= $prod->nombre ?></strong></h3>
 
@@ -63,7 +63,7 @@
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-6 img-producto">
-                    <img src="data:image/jpg;base64, <?php echo base64_encode($prod->imagen); ?>" class="img-product-mostrar" alt="">
+                    <img src="data:image/jpg;base64, <?php echo base64_encode($prod->imagenDetalle); ?>" class="img-product-mostrar" alt="">
                 </div>
             </div>
 

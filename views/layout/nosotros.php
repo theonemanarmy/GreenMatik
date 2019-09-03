@@ -7,7 +7,7 @@
             <p class="white mt-10 mb-50">En Greenmatik haremos realidad tus sueños a toda máquina, aplicando en
                 todos nuestros procesos los valores que nos definen. </p>
             <div>
-                <a href="tel:8127480049"><button class="btn btn-border-white mont">Llámanos</button></a>
+                <a href="tel:8110867509"><button class="btn btn-border-white mont">Llámanos</button></a>
                 <a href="<?= base_url ?>index/contact"><button class="btn btn-blanco ml-10 mont"><strong>Contáctanos</strong></button></a>
             </div>
         </div>

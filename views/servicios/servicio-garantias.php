@@ -9,7 +9,7 @@
                 servicio, tiempos de entrega y promoción de tu marca.
             </p>
             <div>
-                <a href="tel:8127480049"><button class="btn btn-border-white mont">Llámanos</button></a>
+                <a href="tel:8110867509"><button class="btn btn-border-white mont">Llámanos</button></a>
                 <a href="<?=base_url?>producto/catalogue"><button class="btn btn-blanco ml-10 mont"><strong>Ver Catálogo</strong></button></a>
             </div>
         </div>
