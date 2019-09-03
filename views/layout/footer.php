@@ -1,26 +1,16 @@
 <footer class="footer">
     <div class="container">
         <div class="row">
-            <div class="col-xs-123 col-sm-12 col-lg-6">
-                <h2 class="footer"> <strong>GREENMATIK</strong> </h2>
-                <p>Somos una empresa dedicada a dar soluciones de autolavado de vehículos, venta de equipo, refacciones,
-                    accesorios y productos de limpieza.
-                    Un autolavado es un negocio rentable, invierte ahora y haremos realidad tus sueños a toda máquina.
-                    Pregunta por nuestras soluciones de negocio. </p>
-
-                <p class="copy copy-oculto">
-                    <br>
-                    © Copyright 2019 GREENMATIK, Todos los derechos
-                    reservados.
-                    <br>
-                    <a class="footer-link" href="<?= base_url ?>index/terminosYCondiciones">
-                        Aviso de Privacidad
-                    </a>
-                    |
-                    <a class="footer-link " href="http://www.3e-digital.com/" target="_blank">
-                        Sitio web diseñado por 3e-Digital
-                    </a>
+            <div class="col-xs-12 col-sm-12 col-lg-3">
+                <h2 class="footer"> <strong> <img src="<?= base_url ?>assets/images/brand.png" alt="" style="width:75%;"> </strong> </h2>
+                <p>
+                    Empresa dedicada a dar soluciones de autolavado de
+                    vehículos, venta de equipo, refacciones, accesorios
+                    y productos de limpieza. Un autolavado es un negocio
+                    rentable, invierte ahora.
                 </p>
+
+                <!---->
             </div>
             <div class="col-6 col-sm-6 col-lg-3">
                 <h6><strong>CONTÁCTANOS</strong></h6>
@@ -31,17 +21,16 @@
 
                 <a class="footer footer-link"> <i class="fas fa-map-marker-alt dos"></i> <strong>UBICACIÓN</strong></a>
                 <br>
-                <a class="footer-link mt-20" href="https://www.google.com/maps/place/Greenmatik+S.A.+de+C.V./@25.6573297,-100.1985461,21z/data=!4m13!1m7!3m6!1s0x8662c1b8cf080609:0xc84def865bbcb1af!2sPresa+Manuel+%C3%81vila+Camacho+105,+S.C.O.P.,+Guadalupe,+N.L.!3b1!8m2!3d25.6579486!4d-100.1991389!3m4!1s0x8662c130d43003ab:0xc5ccd26d2e891e0a!8m2!3d25.6573297!4d-100.1984093" target="_blank"> 
+                <a class="footer-link mt-20" href="https://www.google.com/maps/place/Greenmatik+S.A.+de+C.V./@25.6573297,-100.1985461,21z/data=!4m13!1m7!3m6!1s0x8662c1b8cf080609:0xc84def865bbcb1af!2sPresa+Manuel+%C3%81vila+Camacho+105,+S.C.O.P.,+Guadalupe,+N.L.!3b1!8m2!3d25.6579486!4d-100.1991389!3m4!1s0x8662c130d43003ab:0xc5ccd26d2e891e0a!8m2!3d25.6573297!4d-100.1984093" target="_blank">
                     <span class="sucursales-footer" style="font-size:11px;">
                         Presa Manuel Avila Camacho #105
                         <br>
                         S. C. O. P Guadalupe, N. L.
                         <br>
                         C. P. 67190
-                    </span> 
+                    </span>
                 </a>
                 <br>
-
 
                 <a class="oculto link" href="tel:8110867509">
                     <i class="fas fa-phone dos"></i> </a>
@@ -49,7 +38,7 @@
 
             </div>
 
-            <div class="col-6 col-sm-6 col-lg-3 ">
+            <div class="col-6 col-sm-6 col-lg-3">
                 <h6><strong>MENÚ</strong> </h6>
                 <a class="footer-link activo" href="<?= base_url ?>index/home"><span>INICIO</span></a> <br>
                 <a class="footer-link" href="<?= base_url ?>index/services"><span>SERVICIOS </span></a> <br>
@@ -64,13 +53,32 @@
                 <a class="oculto link" href="/" target="_blank"> <i class="fab fa-facebook-f dos"></i> @GREENMATIK </a>   -->
             </div>
 
+            <div class="col-6 col-sm-6 col-lg-3">
+                <h6><strong>UBICACIÓN</strong> </h6>
 
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d224.77632316017608!2d-100.1985461!3d25.6573297!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662c130d43003ab%3A0xc5ccd26d2e891e0a!2sGreenmatik%20S.A.%20de%20C.V.!5e0!3m2!1ses!2smx!4v1567094722360!5m2!1ses!2smx" width="100%" height="165" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
         </div>
-        <br><br>
-        <p class=" copy-mostrar "> <br> Copyright © GREENMATIK 2019, Todos los derechos reservados. <br><a class="footer-link" href="aviso-privacidad.php">Aviso de Privacidad </a> |
-            <a class="footer-link " href="http://www.3e-digital.com/" target="_blank"> Sitio web diseñado por 3e-Digital
-            </a>
-        </p>
+
+
+
+        <div class="copyRight mt-20">
+            <p style="color:white; text-align:center;">
+                <br>
+                © Copyright 2019 GREENMATIK, Todos los derechos
+                reservados.
+
+                <a class="footer-link" href="<?= base_url ?>index/terminosYCondiciones">
+                    Aviso de Privacidad
+                </a>
+                |
+                <a class="footer-link " href="http://www.3e-digital.com/" target="_blank">
+                    Sitio web diseñado por 3e-Digital
+                </a>
+            </p>
+        </div>
+
+
     </div>
 </footer>
 

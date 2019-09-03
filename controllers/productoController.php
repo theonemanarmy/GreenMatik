@@ -22,9 +22,11 @@ class productoController{
             $prod = $producto->getOne();
         }
 
-        //Sacar productos Random
-        $prods = new Producto();
-        $productosr = $prods->getRand(3);
+            //Sacar productos Random
+            $prods = new Producto();
+            $productosr = $prods->getRand(3);
+
+
 
         //renderizar vista
         require_once 'views/productos/detalle.php';
