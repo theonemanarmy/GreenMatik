@@ -24,7 +24,7 @@
                 <button category="Túneles de lavado" data-toggle="tooltip" data-placement="top" title="TÚNEL DE LAVADO" class=" btn categoryItem">TÚNEL DE LAVADO</button>
                 <button category="Puentes de lavado" data-toggle="tooltip" data-placement="top" title="PUENTE DE LAVADO" class="btn categoryItem">PUENTE DE LAVADO</button>
                 <button category="Free Touch" data-toggle="tooltip" data-placement="top" title="FREE TOUCH" class="btn categoryItem">FREE TOUCH</button>
-                <button category="" data-toggle="tooltip" data-placement="top" title="PRODUCTO QUÍMICO CERTIFICADO" class="btn categoryItem">PRODUCTO QUÍMICO CERTIFICADO</button>
+                <button category="Productos químicos" data-toggle="tooltip" data-placement="top" title="PRODUCTO QUÍMICO CERTIFICADO" class="btn categoryItem">PRODUCTO QUÍMICO CERTIFICADO</button>
             </div>
         </div>
         <div class="row filtr-container text-center">
