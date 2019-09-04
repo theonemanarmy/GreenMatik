@@ -1,7 +1,7 @@
 <section id="catalogue-banner">
     <div class="container">
         <h1 class="titulo-refacciones">Catálogo</h1>
-        <p class="white mt-10 mb-50">Conoce nuestra increíble línea de productos pensada 100% en el mercado Mexicano.
+        <p class="white mt-10 mb-50">Conoce nuestra increíble línea de productos pensada 100% en el <br> mercado Mexicano.
 
         </p>
         <a href="<?=base_url?>index/contact"><button class="btn btn-border-white mont">Contáctanos</button></a>

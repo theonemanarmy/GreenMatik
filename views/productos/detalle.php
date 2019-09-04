@@ -6,15 +6,15 @@
                     <div class="row align-center">
 
                     </div>
-                    <img src="data:image/jpg;base64, <?= base64_encode($prod->imagenDetalle); ?>" class=" img-product-ocultar" alt="">
-                    <h6 class="bule2" style="color: #149447; font-weight:700;"><?= $prod->serie ?></h6>
-                    <h3 class="blue"><strong><?= $prod->categoria ?> <?= $prod->nombre ?></strong></h3>
+                    <img src="data:image/jpg;base64, <?= isset($prod->imagenDetalle) ? base64_encode($prod->imagenDetalle) : ''; ?>" class=" img-product-ocultar" alt="">
+                    <h6 class="bule2" style="color: #149447; font-weight:700;"><?= isset($prod->serie) ? $prod->serie : ''; ?></h6>
+                    <h3 class="blue"><strong><?= isset($prod->categoria) ? $prod->categoria : ''; ?> <?= isset($prod->nombre) ? $prod->nombre : ''; ?></strong></h3>
 
                     <div class="lista-productos">
                         <?= $prod->serieDescripcion ?>
                     </div>
                     <div>
-                        <strong><?= $prod->serieVentajas ?></strong>
+                        <strong><?= isset($prod->serieVentajas) ? $prod->serieVentajas : ''; ?></strong>
                     </div>
 
                     <div class="mt-20">
@@ -32,7 +32,7 @@
                     <!--Diseñado para ser amigable con el medio ambiente-->
 
                     <div class="mt-20">
-                        <h5><strong>INCLUYE</strong></h5>
+                        <h5><strong><?= isset($prod->incluye1) ? 'INCLUYE' : ''; ?></strong></h5>
 
                         <ul>
                             <?= isset($prod->incluye1) ? "<li>$prod->incluye1</li>" : ''; ?>
@@ -44,12 +44,13 @@
                             <?= isset($prod->incluye7) ? "<li>$prod->incluye7</li>" : ''; ?>
                             <?= isset($prod->incluye8) ? "<li>$prod->incluye8</li>" : ''; ?>
                         </ul>
+                        <?= isset($prod->precio) ? "<h5><strong>Desde $$prod->precio USD</strong></h5>" : ''; ?>
                     </div>
 
                     <div class="row">
                         <a onclick="history.back();">
                             <button class="btn btn-productos-claro mont">
-                                <h6>
+                                <h6 style="margin-bottom:0;">
                                     <i class="fas fa-undo"></i>
                                     <strong>Regresar</strong>
                                 </h6>
@@ -63,7 +64,7 @@
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-6 img-producto">
-                    <img src="data:image/jpg;base64, <?php echo base64_encode($prod->imagenDetalle); ?>" class="img-product-mostrar" alt="">
+                    <img src="data:image/jpg;base64, <?= isset($prod->imagenDetalle) ? base64_encode($prod->imagenDetalle) : ''; ?>" class="img-product-mostrar" alt="">
                 </div>
             </div>
 

@@ -1,6 +1,6 @@
 <footer class="footer">
     <div class="container">
-        <div class="row">
+        <div class="row mt-20">
             <div class="col-xs-12 col-sm-12 col-lg-3">
                 <h2 class="footer"> <strong> <img src="<?= base_url ?>assets/images/brand.png" alt="" style="width:75%;"> </strong> </h2>
                 <p>
@@ -12,6 +12,22 @@
 
                 <!---->
             </div>
+
+            <div class="col-6 col-sm-6 col-lg-3">
+                <h6><strong>MENÚ</strong> </h6>
+                <a class="footer-link activo" href="<?= base_url ?>index/home"><span>INICIO</span></a> <br>
+                <a class="footer-link" href="<?= base_url ?>index/services"><span>SERVICIOS </span></a> <br>
+                <a class="footer-link" href="<?= base_url ?>producto/catalogue"><span>CATÁLOGO DE PRODUCTOS</span></a><br>
+                <a class="footer-link" href="<?= base_url ?>index/spareParts"><span>REFACCIONES</span></a><br>
+                <a class="footer-link" href="<?= base_url ?>index/us"><span>NOSOTROS</span></a><br>
+                <a class="footer-link" href="<?= base_url ?>index/faq"><span>PREGUNTAS FRECUENTES</span></a><br>
+                <a class="footer-link mb-20" href="<?= base_url ?>index/contact"><span class="">CONTACTO</span></a>
+                <!-- <h6 class=" margen-movil2  "><strong>SÍGUENOS</strong></h6>
+                <a class="mostrar footer-link" href="/" target="_blank"> <i class="fab fa-facebook-f dos  "> </i> @friocontrol </a>
+                <h6 class="oculto margen-movil2  "><strong>SÍGUENOS</strong></h6>
+                <a class="oculto link" href="/" target="_blank"> <i class="fab fa-facebook-f dos"></i> @GREENMATIK </a>   -->
+            </div>
+
             <div class="col-6 col-sm-6 col-lg-3">
                 <h6><strong>CONTÁCTANOS</strong></h6>
                 <a class="footer-link"> <i class="fas fa-phone dos"></i> <span style="font-family: 'Raleway', sans-serif;"><strong>TELÉFONOS</strong> </span> </a> <br>
@@ -36,21 +52,6 @@
                     <i class="fas fa-phone dos"></i> </a>
                 <br>
 
-            </div>
-
-            <div class="col-6 col-sm-6 col-lg-3">
-                <h6><strong>MENÚ</strong> </h6>
-                <a class="footer-link activo" href="<?= base_url ?>index/home"><span>INICIO</span></a> <br>
-                <a class="footer-link" href="<?= base_url ?>index/services"><span>SERVICIOS </span></a> <br>
-                <a class="footer-link" href="<?= base_url ?>producto/catalogue"><span>CATÁLOGO DE PRODUCTOS</span></a><br>
-                <a class="footer-link" href="<?= base_url ?>index/spareParts"><span>REFACCIONES</span></a><br>
-                <a class="footer-link" href="<?= base_url ?>index/us"><span>NOSOTROS</span></a><br>
-                <a class="footer-link" href="<?= base_url ?>index/faq"><span>PREGUNTAS FRECUENTES</span></a><br>
-                <a class="footer-link mb-20" href="<?= base_url ?>index/contact"><span class="">CONTACTO</span></a>
-                <!-- <h6 class=" margen-movil2  "><strong>SÍGUENOS</strong></h6>
-                <a class="mostrar footer-link" href="/" target="_blank"> <i class="fab fa-facebook-f dos  "> </i> @friocontrol </a>
-                <h6 class="oculto margen-movil2  "><strong>SÍGUENOS</strong></h6>
-                <a class="oculto link" href="/" target="_blank"> <i class="fab fa-facebook-f dos"></i> @GREENMATIK </a>   -->
             </div>
 
             <div class="col-6 col-sm-6 col-lg-3">
