@@ -1,7 +1,7 @@
     <section class="producto">
         <div class="container">
             <div class="row">
-                <?php if (isset($prod)) : ?>
+                <?php if (isset($prod) && is_object($prod)) : ?>
                 <div class="col-xs-12 col-md-6">
                     <div class="row align-center">
 
@@ -10,8 +10,11 @@
                     <h6 class="bule2" style="color: #149447; font-weight:700;"><?= isset($prod->serie) ? $prod->serie : ''; ?></h6>
                     <h3 class="blue"><strong><?= isset($prod->categoria) ? $prod->categoria : ''; ?> <?= isset($prod->nombre) ? $prod->nombre : ''; ?></strong></h3>
 
+                    <h6 class="bule2" style="color: black; font-weight:700;"><?= isset($prod->categoriaQuimicos) ? $prod->categoriaQuimicos : ''; ?></h6>
+
                     <div class="lista-productos">
-                        <?= $prod->serieDescripcion ?>
+                        <?= isset($prod->serieDescripcion) ? $prod->serieDescripcion : ''; ?>
+                        <?= isset($prod->descripcion) ? $prod->descripcion : ''; ?>
                     </div>
                     <div>
                         <strong><?= isset($prod->serieVentajas) ? $prod->serieVentajas : ''; ?></strong>
