@@ -33,7 +33,7 @@
                 <div class="item-catalogo">
                     <a href="<?=base_url?>producto/detalle&id=<?=$pro->id?>"><img src="data:image/jpg;base64, <?= base64_encode($pro->imagen); ?>" alt="Producto" class="img-fluid imagenProducto">
                         <div class="text-item">
-                            <h6 class="nombreProducto mont"><strong><?= $pro->nombre ?></strong></h6>
+                            <h6 class="nombreProducto mont"><strong><?= isset($pro->nombre) ? $pro->nombre : ''; ?> <?= isset($pro->categoriaQuimicos) ? $pro->categoriaQuimicos : ''; ?></strong></h6>
                             <p class="light"><?= $pro->categoria ?></p>
                         </div>
                     </a>

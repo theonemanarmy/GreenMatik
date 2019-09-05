@@ -253,7 +253,7 @@ box-shadow: 0px 13px 38px -16px rgba(20,148,71,1);
     background: #149447;
     width: 160px;
     height: 45px;
-    margin: 70px 0 0 0;
+    margin: 70px 10px 0 10px;
   
 }
 .btn-productos-claro {
@@ -262,7 +262,7 @@ box-shadow: 0px 13px 38px -16px rgba(20,148,71,1);
     background: transparent;
     width: 160px;
     height: 45px;
-    margin: 70px 10px 0px 0;
+    margin: 70px 10px 0px 10px;
 }
 
 .btn-productos:hover {
@@ -735,7 +735,7 @@ p.light {
 }
 
 div.lista-productos {
-   padding: 30px 0;
+   padding: 10px 0;
 }
 
 .item-product-subtitle {
@@ -748,8 +748,6 @@ ul.lista-refacciones {
     padding: 10px 15px;
 }
 .button-header {
- 
-    
     margin-top: 36px;
     margin-bottom: 9px;
     cursor: pointer;
@@ -950,22 +948,13 @@ a.contacto-tel {
 }
 /*-----------FOOTER ----------*/
  footer {
-    background: url(../images/banners/footer-back.jpg) no-repeat;
-    background-size:  cover;    
+    background: url(../images/banners/footer.png) no-repeat;
+    background-size: cover;    
     padding: 40px 0;
     color: white;
     position: relative;
  }
 
- footer::before{
-     content:  '';
-     position: absolute;
-     width: 100%;
-     height: 100%;
-     left: 0;
-     top: 0;
-     background: rgba(0,0,0,0.8);
- }
  h2.footer {
      color: white;
  }
@@ -1482,6 +1471,9 @@ h1.app {
         font-family: 'Montserrat', sans-serif;
         padding-bottom: 20px;
         
+    }
+    .services {
+        padding: 10px 0;
     }
 }
 @media screen and (max-width:450px){  

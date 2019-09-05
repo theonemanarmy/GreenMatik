@@ -13,8 +13,10 @@
                     <h6 class="bule2" style="color: black; font-weight:700;"><?= isset($prod->categoriaQuimicos) ? $prod->categoriaQuimicos : ''; ?></h6>
 
                     <div class="lista-productos">
+                        <?= isset($prod->prodQuimico) ? "<strong>$prod->prodQuimico</strong> - " : ''; ?> 
+
                         <?= isset($prod->serieDescripcion) ? $prod->serieDescripcion : ''; ?>
-                        <?= isset($prod->descripcion) ? $prod->descripcion : ''; ?>
+                        <?= isset($prod->descripcion) ? str_replace("\n", "<br>", $prod->descripcion) : ''; ?>
                     </div>
                     <div>
                         <strong><?= isset($prod->serieVentajas) ? $prod->serieVentajas : ''; ?></strong>
@@ -79,14 +81,14 @@
         <div class="container">
             <div class="row ">
                 <div class="col-xs-12 col-md-6 ">
-                    <h3 class="blue"><strong>ESPECIFICACIONES TÉCNICAS</strong></h3>
+                    <h3 class="blue"><strong><?= isset($prod->fabricacion) ? "ESPECIFICACIONES TÉCNICAS" : ''; ?></strong></h3>
                     <div class="services">
-                        <table class="table services">
+                    <?= isset($prod->fabricacion) ? "<table class='table services'>" : '';  ?>
                             <thead class="thead-light">
                                 <tr class="align-items-center">
                                     <th scope="col"></th>
-                                    <th scope="col">EQUIPO</th>
-                                    <th scope="col"><?= $prod->categoria ?> <?= $prod->nombre ?></th>
+                                    <?= isset($prod->fabricacion) ? "<th scope='col'>EQUIPO</th>" : ''; ?>
+                                    <?= isset($prod->categoria) && $prod->categoria != "Productos químicos" ? "<th scope='col'>$prod->categoria" : ''; ?> <?= "$prod->nombre </th>" ?>
 
                                 </tr>
                             </thead>
