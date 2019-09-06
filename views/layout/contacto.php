@@ -119,7 +119,7 @@
     <div class="row contact2">
       <div class="col-xs-12 col-md-4">
         <div class="media">
-          <img class="mr-3" src="<?= base_url ?>assets/images/icons/ubicacion.png" alt="Generic placeholder image">
+          <img class="mr-3" src="<?= base_url ?>assets/images/icons/maps-and-flags.png" width="18" alt="Generic placeholder image">
           <div class="media-body">
             <h6 class="mt-0">Ubicación </h6>
             <p class="contacto-text"> Presa Manuel Avila Camacho #105 <br> Col. S. C. O. P, Guadalupe, N.L. <br> C. P. 67190 </p>
@@ -129,7 +129,7 @@
       </div>
       <div class="col-xs-12 col-md-4">
         <div class="media">
-          <img class="mr-3" src="<?= base_url ?>assets/images/icons/tel.png" alt="Generic placeholder image">
+          <img class="mr-3" src="<?= base_url ?>assets/images/icons/call-answer.png" width="18" alt="Generic placeholder image">
           <div class="media-body">
             <h6 class="mt-0">Teléfono </h6> <a class="contacto-tel" href="tel:8110867509">811 086 7509</a><br>
             <!-- <a class="contacto-tel"  href="tel:818394-5570">(81) 8394 5570</a> -->
@@ -138,7 +138,7 @@
       </div>
       <div class="col-xs-12 col-md-4">
         <div class="media ">
-          <img class="mr-3" src="<?= base_url ?>assets/images/icons/tel.png" alt="Generic placeholder image">
+          <img class="mr-3" src="<?= base_url ?>assets/images/icons/envelope.png" width="18" alt="Generic placeholder image">
           <div class="media-body">
             <h6 class="mt-0">E-mail </h6>
             <a class="contacto-tel" href="mailto:ventas@greenmatik.mx">ventas@greenmatik.mx</a>
