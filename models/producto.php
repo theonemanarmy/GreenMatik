@@ -308,16 +308,17 @@ class Producto{
 
         $productos = $this->db->query($sql);
         return $productos;
-    }//
+    }//método de obtener todos los productos
 
     public function getRand($limit){
         $sql = "SELECT p.*, c.nombre AS 'categoria' FROM productos p ".
-                "INNER JOIN categorias c ON p.categoria_id = c.id ORDER BY RAND()".
+                "INNER JOIN categorias c ON p.categoria_id = c.id ".
+                "WHERE c.id = {$this->getCategoria_id()} ".
                 "LIMIT $limit";
 
         $productosr = $this->db->query($sql);
         return $productosr;
-    }//método getRand
+    }//método para obtener un productos
 
     public function getOne(){
         $sql = "SELECT p.*, c.nombre AS 'categoria', s.nombre AS 'serie', s.descripcion AS 'serieDescripcion', ".
@@ -331,6 +332,6 @@ class Producto{
                 "ORDER BY p.id;";
         $producto=$this->db->query($sql);
         return $producto->fetch_object();
-    }//método getOne
+    }//método de obtener un producto
 
 }//Termina clase producto

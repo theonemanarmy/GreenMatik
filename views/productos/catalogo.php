@@ -31,7 +31,7 @@
             <?php while ($pro = $productos->fetch_object()) : ?>
             <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 filtr-item" category="<?= $pro->categoria ?>">
                 <div class="item-catalogo">
-                    <a href="<?=base_url?>producto/detalle&id=<?=$pro->id?>"><img src="data:image/jpg;base64, <?= base64_encode($pro->imagen); ?>" alt="Producto" class="img-fluid imagenProducto">
+                    <a href="<?=base_url?>producto/detalle&id=<?=$pro->id?>&categoria=<?= $pro->categoria_id ?>"><img src="data:image/jpg;base64, <?= base64_encode($pro->imagen); ?>" alt="Producto" class="img-fluid imagenProducto">
                         <div class="text-item">
                             <h6 class="nombreProducto mont"><strong><?= isset($pro->nombre) ? $pro->nombre : ''; ?> <?= isset($pro->categoriaQuimicos) ? $pro->categoriaQuimicos : ''; ?></strong></h6>
                             <p class="light"><?= $pro->categoria ?></p>

@@ -328,7 +328,7 @@
             <div class="item-carousel text-center">
                 <a href="<?= base_url ?>producto/catalogue"> <img src="<?= base_url ?>assets/images/tsunami/TSUNAMI360.png" alt="">
                     <h6 class="item-title mont">TSUNAMI 360 -4D</h6>
-                    <h6>FREE TOUCH - PUENTE DE LAVADO</h6>
+                    <h6>FREE TOUCH</h6>
 
                 </a>
                 <p class="item-description">
@@ -358,7 +358,7 @@
             <div class="item-carousel text-center">
                 <a href="<?= base_url ?>producto/catalogue"> <img src="<?= base_url ?>assets/images/matiksSeries/MK12.png" alt="">
                     <h6 class="item-title mont">MK 12</h6>
-                    <h6>PUENTE DE LAVADO</h6>
+                    <h6>TÚNEL DE LAVADO</h6>
                 </a>
                 <p class="item-description">
                     ÓPTIMO COSTE DE INVERSIÓN
@@ -370,16 +370,14 @@
             </div>
 
             <div class="item-carousel text-center">
-                <a href="<?= base_url ?>producto/catalogue"> <img src="<?= base_url ?>assets/images/xpressSeries/XP5-DS.png" alt="">
-                    <h6 class="item-title mont">LAVA ALFOMBRILLAS</h6>
-                    <h6>PRODUCTOS Y ACCESORIOS</h6>
+                <a href="<?= base_url ?>producto/catalogue"> <img src="<?= base_url ?>assets/images/quimicos/quimicos-prelavado-min.png" alt="Productos GreenMatik">
+                    <h6 class="item-title mont">PRE LAVADO</h6>
+                    <h6>PRODUCTO QUÍMICO CERTIFICADO</h6>
                 </a>
                 <p class="item-description">
-                    FACILIDAD DE USO
+                    DESENGRASANTE UNIVERSAL DE SUPERFICIES
                     <br>
-                    LAVADO EN SECO O CON AGUA
-                    <br>
-                    RESISTENTE Y AUTOMÁTICO
+                    GRAN CAPACIDAD DE HUMECTACIÓN
                 </p>
             </div>
 
