@@ -29,6 +29,10 @@
 
 <body>
 
+    <a class="button-whatsapp" href="https://api.whatsapp.com/send?phone=528127480049">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
     <div class="ir-arriba"><i class="fas fa-arrow-up"></i></div>
 
     <nav class="navbar header-oculto ">
